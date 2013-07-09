@@ -19,6 +19,21 @@ script org_gumbodeAppDelegate
     property webkitDebuggerFIFO : missing value
     property webkitDebuggerPID : missing value
     
+    property avdList : {}
+    
+    on _split(_string, _delim)
+		-- save delimiters to restore old settings
+		set oldDelimiters to AppleScript's text item delimiters
+		-- set delimiters to delimiter to be used
+		set AppleScript's text item delimiters to _delim
+		-- create the array
+		set theArray to every text item of _string
+		-- restore the old setting
+		set AppleScript's text item delimiters to oldDelimiters
+		-- return the result
+		return theArray
+	end _split
+    
     on buttonWebkitDebuggerShow_
         
         set isRunning to do shell script "launchctl list | grep -c ios-webkit-debug-proxy"
@@ -33,7 +48,12 @@ script org_gumbodeAppDelegate
     end buttonWebkitDebuggerClicked_
 	
 	on applicationWillFinishLaunching_(aNotification)
-		-- Insert code here to initialize your application before any files are opened 
+		-- Insert code here to initialize your application before any files are opened
+        
+        -- read AVDs
+        set tempList to do shell script "ls $HOME/.android/avd/*.ini"
+        set avdList to my _split(tempList)
+        
 	end applicationWillFinishLaunching_
 	
 	on applicationShouldTerminate_(sender)

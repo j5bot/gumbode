@@ -5,11 +5,11 @@ logdir {{PRIVOXY_DIR}}/logs
 logfile privoxy.log
 
 actionsfile weinre.action
-# actionsfile aardwolf.action
+actionsfile aardwolf.action
 actionsfile jsconsole.action
 
 filterfile weinre.filter
-# filterfile aardwolf.filter
+filterfile aardwolf.filter
 filterfile jsconsole.filter
 
 toggle 1

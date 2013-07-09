@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A398E5D178CB20F000B4B39 /* Hot Soup Vector.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A398E5C178CB20E000B4B39 /* Hot Soup Vector.png */; };
+		4A398E5F178CBDB6000B4B39 /* rect7391.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A398E5E178CBDB6000B4B39 /* rect7391.png */; };
+		4A398E61178CBDD6000B4B39 /* gumbode.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A398E60178CBDD6000B4B39 /* gumbode.png */; };
+		4A398E63178CC446000B4B39 /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 4A398E62178CC446000B4B39 /* Icon.icns */; };
 		4A50B1C9178B8D52005498DF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A50B1C8178B8D52005498DF /* Cocoa.framework */; };
 		4A50B1CB178B8D52005498DF /* AppleScriptObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A50B1CA178B8D52005498DF /* AppleScriptObjC.framework */; };
 		4A50B1D5178B8D52005498DF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4A50B1D3178B8D52005498DF /* InfoPlist.strings */; };
@@ -18,6 +22,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A398E5C178CB20E000B4B39 /* Hot Soup Vector.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Hot Soup Vector.png"; sourceTree = "<group>"; };
+		4A398E5E178CBDB6000B4B39 /* rect7391.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rect7391.png; sourceTree = "<group>"; };
+		4A398E60178CBDD6000B4B39 /* gumbode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gumbode.png; sourceTree = "<group>"; };
+		4A398E62178CC446000B4B39 /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
 		4A50B1C5178B8D52005498DF /* gumbode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gumbode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A50B1C8178B8D52005498DF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		4A50B1CA178B8D52005498DF /* AppleScriptObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppleScriptObjC.framework; path = System/Library/Frameworks/AppleScriptObjC.framework; sourceTree = SDKROOT; };
@@ -50,6 +58,10 @@
 		4A50B1BC178B8D52005498DF = {
 			isa = PBXGroup;
 			children = (
+				4A398E62178CC446000B4B39 /* Icon.icns */,
+				4A398E60178CBDD6000B4B39 /* gumbode.png */,
+				4A398E5E178CBDB6000B4B39 /* rect7391.png */,
+				4A398E5C178CB20E000B4B39 /* Hot Soup Vector.png */,
 				4A50B1D0178B8D52005498DF /* gumbode */,
 				4A50B1C7178B8D52005498DF /* Frameworks */,
 				4A50B1C6178B8D52005498DF /* Products */,
@@ -163,6 +175,10 @@
 				4A50B1DB178B8D52005498DF /* Credits.rtf in Resources */,
 				4A50B1E0178B8D54005498DF /* MainMenu.xib in Resources */,
 				4A50B1E7178B8D77005498DF /* MainWindow.xib in Resources */,
+				4A398E5D178CB20F000B4B39 /* Hot Soup Vector.png in Resources */,
+				4A398E5F178CBDB6000B4B39 /* rect7391.png in Resources */,
+				4A398E61178CBDD6000B4B39 /* gumbode.png in Resources */,
+				4A398E63178CC446000B4B39 /* Icon.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,8 +1,2 @@
 #!/bin/bash
-
-which adb > /dev/null 2>&1
-if [ $? -eq 0 ]; then
-	adb logcat browser:V *:S
-else
-	$(dirname $(dirname $(which android)))/platform-tools/adb logcat browser:V *:S
-fi
+adb logcat browser:V *:S

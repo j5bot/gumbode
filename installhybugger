@@ -1,9 +1,0 @@
-#!/bin/bash
-NOMOREWIREHANGERS=0
-while [ 1 -ne "$(adb shell getprop init.svc.bootanim | grep -c stopped)" ] && [ 18 > $NOMOREWIREHANGERS ]
-do
-	sleep 10
-	NOMOREWIREHANGERS=$((NOMOREWIREHANGERS + 1))
-done
-
-adb install jsHybugger/jshybugger-proxy-1.2.0.apk

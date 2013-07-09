@@ -1,0 +1,11 @@
+#!/bin/bash
+ALEPH=0
+adb wait-for-device # blocks until device is ready ....
+while [ 1 -ne "$(adb shell getprop init.svc.bootanim | grep -c stopped)" ] && [ 18 -gt $ALEPH ]
+do
+	sleep 10
+	ALEPH=$((ALEPH + 1))
+done
+
+adb install jshybugger/jshybugger-proxy-1.2.0.apk
+adb forward tcp:8889 tcp:8889

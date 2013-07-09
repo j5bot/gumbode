@@ -1,0 +1,38 @@
+#!/bin/bash
+
+function getinfo {
+	AVD="$1"
+	AVD="$(basename ${AVD%.ini})"
+	AVDINFO="$HOME/.android/avd/${AVD}.ini"
+	AVDPATH="$(grep "path=" "$AVDINFO" | sed -e 's|path=||')"
+	AVDCONFIG="$AVDPATH/config.ini"
+
+	TARGET="$(grep "target=" "$AVDINFO" | sed -e 's|target=||')"
+	APILEVEL=$(echo $TARGET | sed -e 's|android-||' -e 's|Google Inc.:Google APIs:||')
+
+	if [[ "$TARGET" == *"Google APIs"* ]]; then
+		GAPI=1
+	else
+		GAPI=0
+	fi
+
+	DEVICE=$(grep "hw.device.name=" "$AVDCONFIG" | sed -e 's|hw.device.name=||')
+	MFR=$(grep "hw.device.manufacturer=" "$AVDCONFIG" | sed -e 's|hw.device.manufacturer=||')
+
+	PLATFORMS=(1.0 1.1 1.5 1.6 2.0 2.0.1 2.1.x 2.2.x 2.3.0-2.3.2 2.3.3-2.3.4 3.0.x 3.1.x 3.2 4.0.0-4.0.2 4.0.3-4.0.4 4.1.0-4.1.1 4.2.0-4.2.2)
+	APINAMES=(BASE BASE CUPCAKE DONUT ECLAIR ECLAIR ECLAIR FROYO GINGERBREAD GINGERBREAD HONEYCOMB HONEYCOMB HONEYCOMB ICE_CREAM_SANDWICH ICE_CREAM_SANDWICH JELLY_BEAN JELLY_BEAN)
+
+	PLATFORM=${PLATFORMS[$APILEVEL]}
+	APINAME=${APINAMES[$APILEVEL]}
+
+	echo -e ${AVD}\\t${DEVICE}\\t${MFR}\\t${PLATFORM}\\t${APILEVEL}\\t${APINAME}
+}
+
+if [ $# -ne 1 ]; then
+	for FILE in $(ls $HOME/.android/avd/*.ini)
+	do
+		getinfo "$FILE"
+	done
+else
+	getinfo "$1"
+fi

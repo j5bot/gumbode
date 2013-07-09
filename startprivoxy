@@ -11,20 +11,20 @@ AARDWOLF_HOST="$HOST_IP:8500"
 
 JSCONSOLE_HOST="jsconsole.com"
 JSCONSOLE_KEY="$(python  -c 'import uuid; print uuid.uuid1()')"
-echo 'jsconsole key: '$JSCONSOLE_KEY
+# echo 'jsconsole key: '$JSCONSOLE_KEY
 open 'http://jsconsole.com/?%3Alisten%20'$JSCONSOLE_KEY
 
 rm Privoxy/conf/*.action
 rm Privoxy/conf/*.filter
 rm Privoxy/conf/config
 
-cp Privoxy/conf/default/* Privoxy/conf
+cp Privoxy/conf/default/* privoxy/conf
 
-FILELIST="$(ls Privoxy/conf)"
+FILELIST="$(ls privoxy/conf)"
 
 for FILE in $FILELIST
 do
-	if [ -f "Privoxy/conf/$FILE" ]; then
+	if [ -f "privoxy/conf/$FILE" ]; then
 		sed -i '' \
 			-e 's|{{PRIVOXY_HOST}}|'"$PRIVOXY_HOST"'|g' \
 			-e 's|{{PRIVOXY_PORT}}|'"$PRIVOXY_PORT"'|g' \
@@ -33,7 +33,7 @@ do
 			-e 's|{{WEINRE_HOST}}|'"$WEINRE_HOST"'|g' \
 			-e 's|{{JSCONSOLE_HOST}}|'"$JSCONSOLE_HOST"'|g' \
 			-e 's|{{JSCONSOLE_KEY}}|'"$JSCONSOLE_KEY"'|g' \
-		"Privoxy/conf/$FILE"
+		"privoxy/conf/$FILE"
 	fi
 done
 
