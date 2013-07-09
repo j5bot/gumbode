@@ -1,0 +1,316 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4A50B1C9178B8D52005498DF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A50B1C8178B8D52005498DF /* Cocoa.framework */; };
+		4A50B1CB178B8D52005498DF /* AppleScriptObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A50B1CA178B8D52005498DF /* AppleScriptObjC.framework */; };
+		4A50B1D5178B8D52005498DF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4A50B1D3178B8D52005498DF /* InfoPlist.strings */; };
+		4A50B1D7178B8D52005498DF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A50B1D6178B8D52005498DF /* main.m */; };
+		4A50B1DB178B8D52005498DF /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 4A50B1D9178B8D52005498DF /* Credits.rtf */; };
+		4A50B1DD178B8D54005498DF /* org_gumbodeAppDelegate.applescript in Sources */ = {isa = PBXBuildFile; fileRef = 4A50B1DC178B8D54005498DF /* org_gumbodeAppDelegate.applescript */; };
+		4A50B1E0178B8D54005498DF /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A50B1DE178B8D54005498DF /* MainMenu.xib */; };
+		4A50B1E7178B8D77005498DF /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A50B1E6178B8D77005498DF /* MainWindow.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4A50B1C5178B8D52005498DF /* gumbode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gumbode.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A50B1C8178B8D52005498DF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		4A50B1CA178B8D52005498DF /* AppleScriptObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppleScriptObjC.framework; path = System/Library/Frameworks/AppleScriptObjC.framework; sourceTree = SDKROOT; };
+		4A50B1CD178B8D52005498DF /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		4A50B1CE178B8D52005498DF /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		4A50B1CF178B8D52005498DF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4A50B1D2178B8D52005498DF /* gumbode-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "gumbode-Info.plist"; sourceTree = "<group>"; };
+		4A50B1D4178B8D52005498DF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4A50B1D6178B8D52005498DF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4A50B1D8178B8D52005498DF /* gumbode-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "gumbode-Prefix.pch"; sourceTree = "<group>"; };
+		4A50B1DA178B8D52005498DF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		4A50B1DC178B8D54005498DF /* org_gumbodeAppDelegate.applescript */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.applescript; path = org_gumbodeAppDelegate.applescript; sourceTree = "<group>"; };
+		4A50B1DF178B8D54005498DF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		4A50B1E6178B8D77005498DF /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainWindow.xib; path = ../MainWindow.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4A50B1C2178B8D52005498DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A50B1C9178B8D52005498DF /* Cocoa.framework in Frameworks */,
+				4A50B1CB178B8D52005498DF /* AppleScriptObjC.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4A50B1BC178B8D52005498DF = {
+			isa = PBXGroup;
+			children = (
+				4A50B1D0178B8D52005498DF /* gumbode */,
+				4A50B1C7178B8D52005498DF /* Frameworks */,
+				4A50B1C6178B8D52005498DF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4A50B1C6178B8D52005498DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4A50B1C5178B8D52005498DF /* gumbode.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4A50B1C7178B8D52005498DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A50B1C8178B8D52005498DF /* Cocoa.framework */,
+				4A50B1CA178B8D52005498DF /* AppleScriptObjC.framework */,
+				4A50B1CC178B8D52005498DF /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4A50B1CC178B8D52005498DF /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A50B1CD178B8D52005498DF /* AppKit.framework */,
+				4A50B1CE178B8D52005498DF /* CoreData.framework */,
+				4A50B1CF178B8D52005498DF /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		4A50B1D0178B8D52005498DF /* gumbode */ = {
+			isa = PBXGroup;
+			children = (
+				4A50B1DC178B8D54005498DF /* org_gumbodeAppDelegate.applescript */,
+				4A50B1DE178B8D54005498DF /* MainMenu.xib */,
+				4A50B1E6178B8D77005498DF /* MainWindow.xib */,
+				4A50B1D1178B8D52005498DF /* Supporting Files */,
+			);
+			path = gumbode;
+			sourceTree = "<group>";
+		};
+		4A50B1D1178B8D52005498DF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4A50B1D2178B8D52005498DF /* gumbode-Info.plist */,
+				4A50B1D3178B8D52005498DF /* InfoPlist.strings */,
+				4A50B1D6178B8D52005498DF /* main.m */,
+				4A50B1D8178B8D52005498DF /* gumbode-Prefix.pch */,
+				4A50B1D9178B8D52005498DF /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4A50B1C4178B8D52005498DF /* gumbode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A50B1E3178B8D54005498DF /* Build configuration list for PBXNativeTarget "gumbode" */;
+			buildPhases = (
+				4A50B1C1178B8D52005498DF /* Sources */,
+				4A50B1C2178B8D52005498DF /* Frameworks */,
+				4A50B1C3178B8D52005498DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = gumbode;
+			productName = gumbode;
+			productReference = 4A50B1C5178B8D52005498DF /* gumbode.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4A50B1BD178B8D52005498DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = org.gumbode;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = gumbode;
+			};
+			buildConfigurationList = 4A50B1C0178B8D52005498DF /* Build configuration list for PBXProject "gumbode" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4A50B1BC178B8D52005498DF;
+			productRefGroup = 4A50B1C6178B8D52005498DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4A50B1C4178B8D52005498DF /* gumbode */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4A50B1C3178B8D52005498DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A50B1D5178B8D52005498DF /* InfoPlist.strings in Resources */,
+				4A50B1DB178B8D52005498DF /* Credits.rtf in Resources */,
+				4A50B1E0178B8D54005498DF /* MainMenu.xib in Resources */,
+				4A50B1E7178B8D77005498DF /* MainWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4A50B1C1178B8D52005498DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A50B1D7178B8D52005498DF /* main.m in Sources */,
+				4A50B1DD178B8D54005498DF /* org_gumbodeAppDelegate.applescript in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4A50B1D3178B8D52005498DF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A50B1D4178B8D52005498DF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4A50B1D9178B8D52005498DF /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A50B1DA178B8D52005498DF /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		4A50B1DE178B8D54005498DF /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A50B1DF178B8D54005498DF /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4A50B1E1178B8D54005498DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		4A50B1E2178B8D54005498DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		4A50B1E4178B8D54005498DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "gumbode/gumbode-Prefix.pch";
+				INFOPLIST_FILE = "gumbode/gumbode-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4A50B1E5178B8D54005498DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "gumbode/gumbode-Prefix.pch";
+				INFOPLIST_FILE = "gumbode/gumbode-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4A50B1C0178B8D52005498DF /* Build configuration list for PBXProject "gumbode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A50B1E1178B8D54005498DF /* Debug */,
+				4A50B1E2178B8D54005498DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A50B1E3178B8D54005498DF /* Build configuration list for PBXNativeTarget "gumbode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A50B1E4178B8D54005498DF /* Debug */,
+				4A50B1E5178B8D54005498DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4A50B1BD178B8D52005498DF /* Project object */;
+}
