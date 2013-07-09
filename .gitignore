@@ -1,3 +1,4 @@
+.DS_Store
 Privoxy/conf/*.action
 Privoxy/conf/*.filter
 Privoxy/conf/config
