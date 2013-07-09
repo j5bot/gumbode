@@ -1,0 +1,9 @@
+#!/bin/bash
+cd Aardwolf
+
+if [ $2 == '' ]; then
+	node app.js -h $1
+else
+	node app.js -h $1 -d $2
+fi
+cd ..

@@ -1,0 +1,3 @@
+# jsconsole filter
+FILTER: jsconsole Inject the jsconsole script into the current page
+s|(<head[^>]*>)|$1\n<script src="//{{JSCONSOLE_HOST}}/remote.js?{{JSCONSOLE_KEY}}"></script>|

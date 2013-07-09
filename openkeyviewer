@@ -1,0 +1,9 @@
+#!/bin/bash
+if [ -d "/System/Library/Input Methods/KeyboardViewer.app" ]; then
+	open "/System/Library/Input Methods/KeyboardViewer.app"
+	exit
+fi
+if [ -d "/System/Library/Components/KeyboardViewer.component/Contents/SharedSupport/KeyboardViewerServer.app" ]; then
+	open "/System/Library/Components/KeyboardViewer.component/Contents/SharedSupport/KeyboardViewerServer.app"
+	exit
+fi

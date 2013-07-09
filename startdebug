@@ -1,0 +1,54 @@
+#!/bin/bash
+
+HOST_DIR="$1"
+WEINRE_PID=""
+AARDWOLF_PID=""
+AVD_PID=""
+ADB_PID=""
+
+if [ "$HOST_DIR" == "" ]; then
+	echo "You must provide the path to your static files in order to debug with Aardwolf"
+	# exit 1
+fi
+
+
+WIFI_IP=$(ifconfig en1 | grep "inet " | cut -d\  -f2)
+WIRE_IP=$(ifconfig en0 | grep "inet " | cut -d\  -f2)
+HOST_IP=""
+
+if [ ! $WIRE_IP == "" ]; then
+	HOST_IP="$WIRE_IP"
+fi
+
+if [ ! $WIFI_IP == "" ]; then
+	HOST_IP="$WIFI_IP"
+fi
+
+./startweinre $HOST_IP &
+WEINRE_PID="$!"
+open "http://$HOST_IP:37128/client"
+
+# if [ $HOST_DIR != "" ]; then
+# 	./startaardwolf $HOST_IP "$HOST_DIR" &
+# 	AARDWOLF_PID="$!"
+
+# 	open "http://$HOST_IP:8000"
+# fi
+
+# ./logcat &
+# ADB_PID="$!"
+http_proxy="$HOST_IP:8118" android avd &
+AVD_PID="$!"
+
+./openkeyviewer
+
+open 'docs/index.html'
+
+./startprivoxy $HOST_IP
+
+kill $WEINRE_PID
+# if [ $AARDWOLF_PID != "" ]; then
+# 	kill $AARDWOLF_PID
+# fi
+# kill $ADB_PID
+# kill $AVD_PID

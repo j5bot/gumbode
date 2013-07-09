@@ -1,0 +1,46 @@
+#!/bin/bash -v
+
+PRIVOXY_CONFIG_DIR="/usr/local/etc/privoxy"
+
+# brew is required
+which brew > /dev/null 2>&1
+if [ $? -ne 0 ]; then
+	echo 'Please install brew (http://mxcl.github.io/homebrew/)'
+	exit
+fi
+
+# android SDK is required
+which android > /dev/null 2>&1
+if [ $? -ne 0 ]; then
+	echo 'Please install the full Android SDK'
+	exit
+fi
+
+# privoxy proxy server used to inject/modify script tags
+if [ ! -d "/usr/local/Cellar/privoxy" ]; then
+	brew install privoxy
+fi
+
+# ios debug proxy allows debugging ios from chrome
+which ios_webkit_debug_proxy > /dev/null 2>&1
+if [ $? -ne 0 ]; then
+	brew install ios-webkit-debug-proxy
+fi
+
+# install Aardwolf
+git clone git://github.com/lexandera/Aardwolf.git Aardwolf
+cd Aardwolf
+npm link
+cd ..
+
+echo 'Install Android AVD repo? THIS WILL OVERWRITE FILES IN .android (y/n)'
+read RESULT
+
+if [ $RESULT == 'y' ]; then
+	# install AVD repo
+	git clone git://github.com/j5at/androidavdrepo androidavdrepo
+	cd androidavdrepo
+	chmod +x linkavd
+	./linkavd
+	cd ..
+fi

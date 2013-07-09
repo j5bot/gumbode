@@ -1,0 +1,40 @@
+#!/bin/bash
+
+HOST_IP="$1"
+
+PRIVOXY_DIR="$(pwd)/Privoxy"
+PRIVOXY_HOST="$HOST_IP"
+PRIVOXY_PORT="8118"
+
+WEINRE_HOST="$HOST_IP:37128"
+AARDWOLF_HOST="$HOST_IP:8500"
+
+JSCONSOLE_HOST="jsconsole.com"
+JSCONSOLE_KEY="$(python  -c 'import uuid; print uuid.uuid1()')"
+echo 'jsconsole key: '$JSCONSOLE_KEY
+open 'http://jsconsole.com/?%3Alisten%20'$JSCONSOLE_KEY
+
+rm Privoxy/conf/*.action
+rm Privoxy/conf/*.filter
+rm Privoxy/conf/config
+
+cp Privoxy/conf/default/* Privoxy/conf
+
+FILELIST="$(ls Privoxy/conf)"
+
+for FILE in $FILELIST
+do
+	if [ -f "Privoxy/conf/$FILE" ]; then
+		sed -i '' \
+			-e 's|{{PRIVOXY_HOST}}|'"$PRIVOXY_HOST"'|g' \
+			-e 's|{{PRIVOXY_PORT}}|'"$PRIVOXY_PORT"'|g' \
+			-e 's|{{PRIVOXY_DIR}}|'"$PRIVOXY_DIR"'|g' \
+			-e 's|{{AARDWOLF_HOST}}|'"$AARDWOLF_HOST"'|g' \
+			-e 's|{{WEINRE_HOST}}|'"$WEINRE_HOST"'|g' \
+			-e 's|{{JSCONSOLE_HOST}}|'"$JSCONSOLE_HOST"'|g' \
+			-e 's|{{JSCONSOLE_KEY}}|'"$JSCONSOLE_KEY"'|g' \
+		"Privoxy/conf/$FILE"
+	fi
+done
+
+/usr/local/sbin/privoxy --no-daemon "$PRIVOXY_DIR/conf/config"
