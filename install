@@ -28,8 +28,8 @@ if [ $? -ne 0 ]; then
 fi
 
 # install Aardwolf
-git clone git://github.com/lexandera/Aardwolf.git Aardwolf
-cd Aardwolf
+git clone git://github.com/lexandera/Aardwolf.git aardwolf
+cd aardwolf
 npm link
 cd ..
 

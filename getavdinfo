@@ -18,15 +18,24 @@ function getinfo {
 
 	DEVICE=$(grep "hw.device.name=" "$AVDCONFIG" | sed -e 's|hw.device.name=||')
 	MFR=$(grep "hw.device.manufacturer=" "$AVDCONFIG" | sed -e 's|hw.device.manufacturer=||')
+	CPU=$(grep "hw.cpu.arch=" "$AVDCONFIG" | sed -e 's|hw.cpu.arch=||' | tr [:lower:] [:upper:])
 
 	PLATFORMS=(1.0 1.1 1.5 1.6 2.0 2.0.1 2.1.x 2.2.x 2.3.0-2.3.2 2.3.3-2.3.4 3.0.x 3.1.x 3.2 4.0.0-4.0.2 4.0.3-4.0.4 4.1.0-4.1.1 4.2.0-4.2.2)
 	APINAMES=(BASE BASE CUPCAKE DONUT ECLAIR ECLAIR ECLAIR FROYO GINGERBREAD GINGERBREAD HONEYCOMB HONEYCOMB HONEYCOMB ICE_CREAM_SANDWICH ICE_CREAM_SANDWICH JELLY_BEAN JELLY_BEAN)
 
-	PLATFORM=${PLATFORMS[$APILEVEL]}
-	APINAME=${APINAMES[$APILEVEL]}
+	PLATFORM=${PLATFORMS[((APILEVEL-1))]}
+	APINAME=${APINAMES[((APILEVEL-1))]}
 
-	echo -e ${AVD}\\t${DEVICE}\\t${MFR}\\t${PLATFORM}\\t${APILEVEL}\\t${APINAME}
+	# echo -e ${AVD}\\t${DEVICE}\\t${MFR}\\t${PLATFORM}\\t${APILEVEL}\\t${APINAME}
+	printf '%-20s\t%-15s\t%-10s\t%-5s\t%-3s\t%-3s\t%-20s\n' "${AVD:0:20}" "${DEVICE:0:15}" "${MFR:0:10}" "${PLATFORM:0:5}" "${CPU:0:3}" "${APILEVEL:0:3}" "${APINAME:0:20}"
 }
+
+echo
+
+printf '%-20s\t%-15s\t%-10s\t%-5s\t%-3s\t%-3s\t%-20s\n' "AVD Name" "Device" "Mfr." "Ver." "CPU" "API" "Codename"
+
+UNDERBAR="--------------------"
+printf '%.20s\t%.15s\t%.10s\t%.5s\t%.3s\t%.3s\t%.20s\n' $UNDERBAR $UNDERBAR $UNDERBAR $UNDERBAR $UNDERBAR $UNDERBAR $UNDERBAR
 
 if [ $# -ne 1 ]; then
 	for FILE in $(ls $HOME/.android/avd/*.ini)
@@ -36,3 +45,4 @@ if [ $# -ne 1 ]; then
 else
 	getinfo "$1"
 fi
+echo

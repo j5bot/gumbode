@@ -1,5 +1,5 @@
 #!/bin/bash
-cd Aardwolf
+cd aardwolf
 
 if [ $2 == '' ]; then
 	node app.js -h $1

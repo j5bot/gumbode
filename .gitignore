@@ -1,6 +1,6 @@
 .DS_Store
-Privoxy/conf/*.action
-Privoxy/conf/*.filter
-Privoxy/conf/config
-Privoxy/logs/
-Aardwolf/
+privoxy/conf/*.action
+privoxy/conf/*.filter
+privoxy/conf/config
+privoxy/logs/
+aardwolf/
