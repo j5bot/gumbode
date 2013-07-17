@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:gumbode.xcodeproj">
+      location = "self:GUmBoDE.xcodeproj">
    </FileRef>
 </Workspace>

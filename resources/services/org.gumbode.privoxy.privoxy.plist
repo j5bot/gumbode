@@ -3,16 +3,20 @@
 <plist version="1.0">
   <dict>
     <key>Label</key>
-    <string>npm.apache.weinre</string>
+    <string>gumbode.privoxy</string>
+    <key>EnableGlobbing</key>
+    <true/>
     <key>ProgramArguments</key>
     <array>
-      <string>/usr/local/share/npm/bin/weinre</string>
-      <string>-httpPort 37128</script>
+      <string>/bin/bash</string>
+      <string>-c</string>
+      <string>-l</string>
+      <string>/usr/local/sbin/privoxy --no-daemon ~/.gumbode/privoxy/conf/config</string>
     </array>
     <key>StandardOutPath</key>
-    <string>/tmp/weinre.log</string>
+    <string>/tmp/privoxy.log</string>
     <key>StandardErrorPath</key>
-    <string>/tmp/weinre.log</string>
+    <string>/tmp/privoxy.log</string>
     <key>KeepAlive</key>
     <dict>
       <key>SuccessfulExit</key>

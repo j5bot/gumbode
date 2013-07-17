@@ -1,5 +1,7 @@
 #!/bin/bash -v
 
+mkdir ~/.gumbode
+
 PRIVOXY_CONFIG_DIR="/usr/local/etc/privoxy"
 
 # brew is required
@@ -16,6 +18,17 @@ if [ $? -ne 0 ]; then
 	exit
 fi
 
+which node > /dev/null 2>&1
+if [ $? -ne 0 ]; then
+	brew install node
+fi
+
+which adb > /dev/null 2>&1
+if [ $? -ne 0 ]; then
+	echo 'Please make sure that the Android SDK platform-tools/bin directory is in the PATH'
+	exit
+fi
+
 # privoxy proxy server used to inject/modify script tags
 if [ ! -d "/usr/local/Cellar/privoxy" ]; then
 	brew install privoxy
@@ -27,11 +40,20 @@ if [ $? -ne 0 ]; then
 	brew install ios-webkit-debug-proxy
 fi
 
+# install weinre
+which weinre > /dev/null 2>&1
+if [ $? -ne 0 ]; then
+	npm install -g weinre
+fi
+ln -sfh $(pwd)/resources/startweinre ~/.gumbode/weinre/start
+
 # install Aardwolf
 git clone git://github.com/lexandera/Aardwolf.git aardwolf
 cd aardwolf
 npm link
 cd ..
+ln -sfh $(pwd)/aardwolf ~/.gumbode/aardwolf
+ln -sfh $(pwd)/resources/startaardwolf ~/.gumbode/aardwolf/start
 
 echo 'Install Android AVD repo? THIS WILL OVERWRITE FILES IN .android (y/n)'
 read RESULT

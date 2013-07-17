@@ -1,0 +1,24 @@
+#!/bin/bash
+
+function getname {
+
+AVDPORT="$1"
+AVDNAME=$(
+ps $(lsof -i:$AVDPORT | grep "emulator" | head -n 1 | cut -f 2 -d ' ') | grep 'emulator' | sed 's|.*-avd ||' | cut -f 1 -d ' ')
+	echo -e "$AVDNAME\\t$AVDPORT"
+}
+
+if [ "$1" == "" ]; then
+	ADBLIST="$(adb devices | grep -e '-' | cut -f 1)"
+
+	for AVDPORT in $ADBLIST
+	do
+		if [[ "$AVDPORT" == *"emulator"* ]]; then
+			getname $(echo $AVDPORT | sed 's|emulator-||')
+		else
+			echo "$AVDPORT" | tr '-' '\\t'
+		fi
+	done
+else
+	getname "$1"
+fi

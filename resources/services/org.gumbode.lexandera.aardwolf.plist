@@ -3,15 +3,20 @@
 <plist version="1.0">
   <dict>
     <key>Label</key>
-    <string>homebrew.google.ios-webkit-debug-proxy</string>
+    <string>gumbode.aardwolf</string>
+    <key>EnableGlobbing</key>
+    <true/>
     <key>ProgramArguments</key>
     <array>
-      <string>/usr/local/opt/ios-webkit-debug-proxy/bin/ios_webkit_debug_proxy</string>
+      <string>/bin/bash</string>
+      <string>-c</string>
+      <string>-l</string>
+      <string>~/.gumbode/aardwolf/start ~/.gumbode/aardwolf.conf</string>
     </array>
     <key>StandardOutPath</key>
-    <string>/tmp/ios-webkit-debug-proxy.log</string>
+    <string>/tmp/aardwolf.log</string>
     <key>StandardErrorPath</key>
-    <string>/tmp/ios-webkit-debug-proxy.log</string>
+    <string>/tmp/aardwolf.log</string>
     <key>KeepAlive</key>
     <dict>
       <key>SuccessfulExit</key>

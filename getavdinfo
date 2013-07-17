@@ -27,15 +27,15 @@ function getinfo {
 	APINAME=${APINAMES[((APILEVEL-1))]}
 
 	# echo -e ${AVD}\\t${DEVICE}\\t${MFR}\\t${PLATFORM}\\t${APILEVEL}\\t${APINAME}
-	printf '%-20s\t%-15s\t%-10s\t%-5s\t%-3s\t%-3s\t%-20s\n' "${AVD:0:20}" "${DEVICE:0:15}" "${MFR:0:10}" "${PLATFORM:0:5}" "${CPU:0:3}" "${APILEVEL:0:3}" "${APINAME:0:20}"
+	printf '%-30s\t%-15s\t%-10s\t%-5s\t%-3s\t%-3s\t%-20s\n' "${AVD:0:30}" "${DEVICE:0:15}" "${MFR:0:10}" "${PLATFORM:0:5}" "${CPU:0:3}" "${APILEVEL:0:3}" "${APINAME:0:20}"
 }
 
 echo
 
-printf '%-20s\t%-15s\t%-10s\t%-5s\t%-3s\t%-3s\t%-20s\n' "AVD Name" "Device" "Mfr." "Ver." "CPU" "API" "Codename"
+printf '%-30s\t%-15s\t%-10s\t%-5s\t%-3s\t%-3s\t%-20s\n' "AVD Name" "Device" "Mfr." "Ver." "CPU" "API" "Codename"
 
-UNDERBAR="--------------------"
-printf '%.20s\t%.15s\t%.10s\t%.5s\t%.3s\t%.3s\t%.20s\n' $UNDERBAR $UNDERBAR $UNDERBAR $UNDERBAR $UNDERBAR $UNDERBAR $UNDERBAR
+UNDERBAR="------------------------------"
+printf '%.30s\t%.15s\t%.10s\t%.5s\t%.3s\t%.3s\t%.20s\n' $UNDERBAR $UNDERBAR $UNDERBAR $UNDERBAR $UNDERBAR $UNDERBAR $UNDERBAR
 
 if [ $# -ne 1 ]; then
 	for FILE in $(ls $HOME/.android/avd/*.ini)

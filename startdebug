@@ -1,54 +1,86 @@
 #!/bin/bash
 
-HOST_DIR="$1"
-WEINRE_PID=""
-AARDWOLF_PID=""
-AVD_PID=""
-ADB_PID=""
+WEINRE_FLAG=1
+JSCONSOLE_FLAG=2
+AARDWOLF_FLAG=4
+IWKDP_FLAG=8
 
-if [ "$HOST_DIR" == "" ]; then
-	echo "You must provide the path to your static files in order to debug with Aardwolf"
-	# exit 1
-fi
-
+PRIVOXY_SERVICES_FILE="$HOME/.gumbode/privoxy/services.ini"
 
 WIFI_IP=$(ifconfig en1 | grep "inet " | cut -d\  -f2)
 WIRE_IP=$(ifconfig en0 | grep "inet " | cut -d\  -f2)
 HOST_IP=""
 
-if [ ! $WIRE_IP == "" ]; then
+if [ $WIFI_IP != "" ]; then
+	if [ $WIRE_IP != "" ]; then
+		read -p "Use WIFI (en1) adapter at ${WIFI_IP}? (y/n) " USEWIFI
+		if [ "$USEWIFI" == "y" ]; then HOST_IP="$WIFI_IP"; fi
+	else
+		HOST_IP="$WIFI_IP"
+	fi
+fi
+
+if [ $HOST_IP == "" ] && [ $WIRE_IP != "" ]; then
 	HOST_IP="$WIRE_IP"
 fi
 
-if [ ! $WIFI_IP == "" ]; then
-	HOST_IP="$WIFI_IP"
+echo Which debugging services should be started or used\?
+
+echo 1\*  Weinre
+
+echo 2\*  JS Console
+
+echo 3.  Weinre + JS Console
+
+echo 4\*  Aardwolf
+
+echo 5.  Weinre + Aardwolf
+echo 6.  JS Console + Aardwolf
+echo 7.  Weinre + JS Console + Weinre
+echo
+
+echo 8\*  iOS Webkit Debug Proxy 
+
+echo 9.  Weinre + iOS Webkit Debug Proxy
+echo 10. JS Console + iOS Webkit Debug Proxy
+echo 11. JS Console + Weinre + iOS Webkit Debug Proxy
+echo 12. Aardwolf + iOS Webkit Debug Proxy
+echo 13. Weinre + Aardwolf + iOS Webkit Debug Proxy
+echo 14. JS Console + Aardwolf + iOS Webkit Debug Proxy
+echo 15. Weinre + JS Console + Aardwolf + iOS Webkit Debug Proxy
+echo
+read -p "Enter 0-15 to select services: " SERVICES_FLAG
+
+rm "$PRIVOXY_SERVICES_FILE"
+touch "$PRIVOXY_SERVICES_FILE"
+
+if [[ $((SERVICES_FLAG & WEINRE_FLAG)) -eq WEINRE_FLAG ]]; then
+	echo "WEINRE=1" >> "$PRIVOXY_SERVICES_FILE"
+	launchctl unload resources/services/org.gumbode.apache.weinre.plist
+	launchctl load resources/services/org.gumbode.apache.weinre.plist
+	open "http://$HOST_IP:37128"
+else
+	echo "WEINRE=0" >> "$PRIVOXY_SERVICES_FILE"
 fi
 
-./startweinre $HOST_IP &
-WEINRE_PID="$!"
-open "http://$HOST_IP:37128/client"
+if [ $((SERVICES_FLAG & JSCONSOLE_FLAG)) -eq $JSCONSOLE_FLAG ]; then
+	echo "JSCONSOLE=1" >> "$PRIVOXY_SERVICES_FILE"
+else
+	echo "JSCONSOLE=0" >> "$PRIVOXY_SERVICES_FILE"
+fi
 
-# if [ $HOST_DIR != "" ]; then
-# 	./startaardwolf $HOST_IP "$HOST_DIR" &
-# 	AARDWOLF_PID="$!"
+if [ $((SERVICES_FLAG & AARDWOLF_FLAG)) -eq $AARDWOLF_FLAG ]; then
+	# we need to find out what kind of rewrites they want to do with aardwolf
+	echo "Aarwolf is typically used to allow stepped debugging and must serve your JS files in order to do so"
+	read -p "What is the path to the JS files you'd like it to serve?: " AARDWOLF_DIR
+	read -p 'What is the URL pattern to match to determine which files to serve?: (/js/.*.js|/scripts/.*.js) ' AARDWOLF_MATCH
 
-# 	open "http://$HOST_IP:8000"
-# fi
+	head -n 3 "privoxy/conf/aardwolf.filter" > "privoxy/conf/aardwolf.filter.new"
+	tail -n 1 "privoxy/conf/aardwolf.filter" | sed -e 's|{{AARDWOLF_MATCH}}|'"$AARDWOLF_MATCH"'|' >> "privoxy/confo/aardwolf.filter.new"
+	cp "privoxy/conf/aardwolf.filter.new" "privoxy/conf/aardwolf.filter.new"
 
-# ./logcat &
-# ADB_PID="$!"
-http_proxy="$HOST_IP:8118" android avd &
-AVD_PID="$!"
-
-./openkeyviewer
-
-open 'docs/index.html'
-
-./startprivoxy $HOST_IP
-
-kill $WEINRE_PID
-# if [ $AARDWOLF_PID != "" ]; then
-# 	kill $AARDWOLF_PID
-# fi
-# kill $ADB_PID
-# kill $AVD_PID
+	echo "AARDWOLF=1" >> "$PRIVOXY_SERVICES_FILE"
+	launchctl unload resources/services/org.gumbode.
+else
+	echo "AARDWOLF=0" >> "$PRIVOXY_SERVICES_FILE"
+fi

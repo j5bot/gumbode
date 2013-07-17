@@ -7,114 +7,102 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4A398E5D178CB20F000B4B39 /* Hot Soup Vector.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A398E5C178CB20E000B4B39 /* Hot Soup Vector.png */; };
-		4A398E5F178CBDB6000B4B39 /* rect7391.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A398E5E178CBDB6000B4B39 /* rect7391.png */; };
-		4A398E61178CBDD6000B4B39 /* gumbode.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A398E60178CBDD6000B4B39 /* gumbode.png */; };
-		4A398E63178CC446000B4B39 /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 4A398E62178CC446000B4B39 /* Icon.icns */; };
-		4A50B1C9178B8D52005498DF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A50B1C8178B8D52005498DF /* Cocoa.framework */; };
-		4A50B1CB178B8D52005498DF /* AppleScriptObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A50B1CA178B8D52005498DF /* AppleScriptObjC.framework */; };
-		4A50B1D5178B8D52005498DF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4A50B1D3178B8D52005498DF /* InfoPlist.strings */; };
-		4A50B1D7178B8D52005498DF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A50B1D6178B8D52005498DF /* main.m */; };
-		4A50B1DB178B8D52005498DF /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 4A50B1D9178B8D52005498DF /* Credits.rtf */; };
-		4A50B1DD178B8D54005498DF /* org_gumbodeAppDelegate.applescript in Sources */ = {isa = PBXBuildFile; fileRef = 4A50B1DC178B8D54005498DF /* org_gumbodeAppDelegate.applescript */; };
-		4A50B1E0178B8D54005498DF /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A50B1DE178B8D54005498DF /* MainMenu.xib */; };
-		4A50B1E7178B8D77005498DF /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A50B1E6178B8D77005498DF /* MainWindow.xib */; };
+		4A72AF38178E3B5E00E18799 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A72AF37178E3B5E00E18799 /* Cocoa.framework */; };
+		4A72AF3A178E3B5E00E18799 /* AppleScriptObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A72AF39178E3B5E00E18799 /* AppleScriptObjC.framework */; };
+		4A72AF44178E3B5E00E18799 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4A72AF42178E3B5E00E18799 /* InfoPlist.strings */; };
+		4A72AF46178E3B5E00E18799 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A72AF45178E3B5E00E18799 /* main.m */; };
+		4A72AF4A178E3B5E00E18799 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 4A72AF48178E3B5E00E18799 /* Credits.rtf */; };
+		4A72AF4C178E3B5E00E18799 /* org_gumbodeAppDelegate.applescript in Sources */ = {isa = PBXBuildFile; fileRef = 4A72AF4B178E3B5E00E18799 /* org_gumbodeAppDelegate.applescript */; };
+		4A72AF4F178E3B5E00E18799 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A72AF4D178E3B5E00E18799 /* MainMenu.xib */; };
+		4A72AF56178E3F9800E18799 /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 4A72AF55178E3F9800E18799 /* Icon.icns */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4A398E5C178CB20E000B4B39 /* Hot Soup Vector.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Hot Soup Vector.png"; sourceTree = "<group>"; };
-		4A398E5E178CBDB6000B4B39 /* rect7391.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rect7391.png; sourceTree = "<group>"; };
-		4A398E60178CBDD6000B4B39 /* gumbode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gumbode.png; sourceTree = "<group>"; };
-		4A398E62178CC446000B4B39 /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
-		4A50B1C5178B8D52005498DF /* gumbode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gumbode.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		4A50B1C8178B8D52005498DF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		4A50B1CA178B8D52005498DF /* AppleScriptObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppleScriptObjC.framework; path = System/Library/Frameworks/AppleScriptObjC.framework; sourceTree = SDKROOT; };
-		4A50B1CD178B8D52005498DF /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
-		4A50B1CE178B8D52005498DF /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		4A50B1CF178B8D52005498DF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		4A50B1D2178B8D52005498DF /* gumbode-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "gumbode-Info.plist"; sourceTree = "<group>"; };
-		4A50B1D4178B8D52005498DF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		4A50B1D6178B8D52005498DF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4A50B1D8178B8D52005498DF /* gumbode-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "gumbode-Prefix.pch"; sourceTree = "<group>"; };
-		4A50B1DA178B8D52005498DF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		4A50B1DC178B8D54005498DF /* org_gumbodeAppDelegate.applescript */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.applescript; path = org_gumbodeAppDelegate.applescript; sourceTree = "<group>"; };
-		4A50B1DF178B8D54005498DF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		4A50B1E6178B8D77005498DF /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainWindow.xib; path = ../MainWindow.xib; sourceTree = "<group>"; };
+		4A72AF34178E3B5E00E18799 /* GUmBoDE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GUmBoDE.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A72AF37178E3B5E00E18799 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		4A72AF39178E3B5E00E18799 /* AppleScriptObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppleScriptObjC.framework; path = System/Library/Frameworks/AppleScriptObjC.framework; sourceTree = SDKROOT; };
+		4A72AF3C178E3B5E00E18799 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		4A72AF3D178E3B5E00E18799 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		4A72AF3E178E3B5E00E18799 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4A72AF41178E3B5E00E18799 /* GUmBoDE-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GUmBoDE-Info.plist"; sourceTree = "<group>"; };
+		4A72AF43178E3B5E00E18799 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4A72AF45178E3B5E00E18799 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4A72AF47178E3B5E00E18799 /* GUmBoDE-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GUmBoDE-Prefix.pch"; sourceTree = "<group>"; };
+		4A72AF49178E3B5E00E18799 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		4A72AF4B178E3B5E00E18799 /* org_gumbodeAppDelegate.applescript */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.applescript; path = org_gumbodeAppDelegate.applescript; sourceTree = "<group>"; };
+		4A72AF4E178E3B5E00E18799 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		4A72AF55178E3F9800E18799 /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4A50B1C2178B8D52005498DF /* Frameworks */ = {
+		4A72AF31178E3B5E00E18799 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A50B1C9178B8D52005498DF /* Cocoa.framework in Frameworks */,
-				4A50B1CB178B8D52005498DF /* AppleScriptObjC.framework in Frameworks */,
+				4A72AF38178E3B5E00E18799 /* Cocoa.framework in Frameworks */,
+				4A72AF3A178E3B5E00E18799 /* AppleScriptObjC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4A50B1BC178B8D52005498DF = {
+		4A72AF2B178E3B5D00E18799 = {
 			isa = PBXGroup;
 			children = (
-				4A398E62178CC446000B4B39 /* Icon.icns */,
-				4A398E60178CBDD6000B4B39 /* gumbode.png */,
-				4A398E5E178CBDB6000B4B39 /* rect7391.png */,
-				4A398E5C178CB20E000B4B39 /* Hot Soup Vector.png */,
-				4A50B1D0178B8D52005498DF /* gumbode */,
-				4A50B1C7178B8D52005498DF /* Frameworks */,
-				4A50B1C6178B8D52005498DF /* Products */,
+				4A72AF55178E3F9800E18799 /* Icon.icns */,
+				4A72AF3F178E3B5E00E18799 /* GUmBoDE */,
+				4A72AF36178E3B5E00E18799 /* Frameworks */,
+				4A72AF35178E3B5E00E18799 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		4A50B1C6178B8D52005498DF /* Products */ = {
+		4A72AF35178E3B5E00E18799 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4A50B1C5178B8D52005498DF /* gumbode.app */,
+				4A72AF34178E3B5E00E18799 /* GUmBoDE.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4A50B1C7178B8D52005498DF /* Frameworks */ = {
+		4A72AF36178E3B5E00E18799 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4A50B1C8178B8D52005498DF /* Cocoa.framework */,
-				4A50B1CA178B8D52005498DF /* AppleScriptObjC.framework */,
-				4A50B1CC178B8D52005498DF /* Other Frameworks */,
+				4A72AF37178E3B5E00E18799 /* Cocoa.framework */,
+				4A72AF39178E3B5E00E18799 /* AppleScriptObjC.framework */,
+				4A72AF3B178E3B5E00E18799 /* Other Frameworks */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		4A50B1CC178B8D52005498DF /* Other Frameworks */ = {
+		4A72AF3B178E3B5E00E18799 /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4A50B1CD178B8D52005498DF /* AppKit.framework */,
-				4A50B1CE178B8D52005498DF /* CoreData.framework */,
-				4A50B1CF178B8D52005498DF /* Foundation.framework */,
+				4A72AF3C178E3B5E00E18799 /* AppKit.framework */,
+				4A72AF3D178E3B5E00E18799 /* CoreData.framework */,
+				4A72AF3E178E3B5E00E18799 /* Foundation.framework */,
 			);
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		4A50B1D0178B8D52005498DF /* gumbode */ = {
+		4A72AF3F178E3B5E00E18799 /* GUmBoDE */ = {
 			isa = PBXGroup;
 			children = (
-				4A50B1DC178B8D54005498DF /* org_gumbodeAppDelegate.applescript */,
-				4A50B1DE178B8D54005498DF /* MainMenu.xib */,
-				4A50B1E6178B8D77005498DF /* MainWindow.xib */,
-				4A50B1D1178B8D52005498DF /* Supporting Files */,
+				4A72AF4B178E3B5E00E18799 /* org_gumbodeAppDelegate.applescript */,
+				4A72AF4D178E3B5E00E18799 /* MainMenu.xib */,
+				4A72AF40178E3B5E00E18799 /* Supporting Files */,
 			);
-			path = gumbode;
+			path = GUmBoDE;
 			sourceTree = "<group>";
 		};
-		4A50B1D1178B8D52005498DF /* Supporting Files */ = {
+		4A72AF40178E3B5E00E18799 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				4A50B1D2178B8D52005498DF /* gumbode-Info.plist */,
-				4A50B1D3178B8D52005498DF /* InfoPlist.strings */,
-				4A50B1D6178B8D52005498DF /* main.m */,
-				4A50B1D8178B8D52005498DF /* gumbode-Prefix.pch */,
-				4A50B1D9178B8D52005498DF /* Credits.rtf */,
+				4A72AF41178E3B5E00E18799 /* GUmBoDE-Info.plist */,
+				4A72AF42178E3B5E00E18799 /* InfoPlist.strings */,
+				4A72AF45178E3B5E00E18799 /* main.m */,
+				4A72AF47178E3B5E00E18799 /* GUmBoDE-Prefix.pch */,
+				4A72AF48178E3B5E00E18799 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -122,101 +110,97 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4A50B1C4178B8D52005498DF /* gumbode */ = {
+		4A72AF33178E3B5E00E18799 /* GUmBoDE */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4A50B1E3178B8D54005498DF /* Build configuration list for PBXNativeTarget "gumbode" */;
+			buildConfigurationList = 4A72AF52178E3B5E00E18799 /* Build configuration list for PBXNativeTarget "GUmBoDE" */;
 			buildPhases = (
-				4A50B1C1178B8D52005498DF /* Sources */,
-				4A50B1C2178B8D52005498DF /* Frameworks */,
-				4A50B1C3178B8D52005498DF /* Resources */,
+				4A72AF30178E3B5E00E18799 /* Sources */,
+				4A72AF31178E3B5E00E18799 /* Frameworks */,
+				4A72AF32178E3B5E00E18799 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = gumbode;
-			productName = gumbode;
-			productReference = 4A50B1C5178B8D52005498DF /* gumbode.app */;
+			name = GUmBoDE;
+			productName = GUmBoDE;
+			productReference = 4A72AF34178E3B5E00E18799 /* GUmBoDE.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		4A50B1BD178B8D52005498DF /* Project object */ = {
+		4A72AF2C178E3B5D00E18799 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = org.gumbode;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = gumbode;
 			};
-			buildConfigurationList = 4A50B1C0178B8D52005498DF /* Build configuration list for PBXProject "gumbode" */;
+			buildConfigurationList = 4A72AF2F178E3B5D00E18799 /* Build configuration list for PBXProject "GUmBoDE" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 4A50B1BC178B8D52005498DF;
-			productRefGroup = 4A50B1C6178B8D52005498DF /* Products */;
+			mainGroup = 4A72AF2B178E3B5D00E18799;
+			productRefGroup = 4A72AF35178E3B5E00E18799 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4A50B1C4178B8D52005498DF /* gumbode */,
+				4A72AF33178E3B5E00E18799 /* GUmBoDE */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		4A50B1C3178B8D52005498DF /* Resources */ = {
+		4A72AF32178E3B5E00E18799 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A50B1D5178B8D52005498DF /* InfoPlist.strings in Resources */,
-				4A50B1DB178B8D52005498DF /* Credits.rtf in Resources */,
-				4A50B1E0178B8D54005498DF /* MainMenu.xib in Resources */,
-				4A50B1E7178B8D77005498DF /* MainWindow.xib in Resources */,
-				4A398E5D178CB20F000B4B39 /* Hot Soup Vector.png in Resources */,
-				4A398E5F178CBDB6000B4B39 /* rect7391.png in Resources */,
-				4A398E61178CBDD6000B4B39 /* gumbode.png in Resources */,
-				4A398E63178CC446000B4B39 /* Icon.icns in Resources */,
+				4A72AF44178E3B5E00E18799 /* InfoPlist.strings in Resources */,
+				4A72AF4A178E3B5E00E18799 /* Credits.rtf in Resources */,
+				4A72AF4F178E3B5E00E18799 /* MainMenu.xib in Resources */,
+				4A72AF56178E3F9800E18799 /* Icon.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4A50B1C1178B8D52005498DF /* Sources */ = {
+		4A72AF30178E3B5E00E18799 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A50B1D7178B8D52005498DF /* main.m in Sources */,
-				4A50B1DD178B8D54005498DF /* org_gumbodeAppDelegate.applescript in Sources */,
+				4A72AF46178E3B5E00E18799 /* main.m in Sources */,
+				4A72AF4C178E3B5E00E18799 /* org_gumbodeAppDelegate.applescript in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		4A50B1D3178B8D52005498DF /* InfoPlist.strings */ = {
+		4A72AF42178E3B5E00E18799 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				4A50B1D4178B8D52005498DF /* en */,
+				4A72AF43178E3B5E00E18799 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		4A50B1D9178B8D52005498DF /* Credits.rtf */ = {
+		4A72AF48178E3B5E00E18799 /* Credits.rtf */ = {
 			isa = PBXVariantGroup;
 			children = (
-				4A50B1DA178B8D52005498DF /* en */,
+				4A72AF49178E3B5E00E18799 /* en */,
 			);
 			name = Credits.rtf;
 			sourceTree = "<group>";
 		};
-		4A50B1DE178B8D54005498DF /* MainMenu.xib */ = {
+		4A72AF4D178E3B5E00E18799 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				4A50B1DF178B8D54005498DF /* en */,
+				4A72AF4E178E3B5E00E18799 /* en */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -224,7 +208,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		4A50B1E1178B8D54005498DF /* Debug */ = {
+		4A72AF50178E3B5E00E18799 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -256,7 +240,7 @@
 			};
 			name = Debug;
 		};
-		4A50B1E2178B8D54005498DF /* Release */ = {
+		4A72AF51178E3B5E00E18799 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -281,25 +265,25 @@
 			};
 			name = Release;
 		};
-		4A50B1E4178B8D54005498DF /* Debug */ = {
+		4A72AF53178E3B5E00E18799 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "gumbode/gumbode-Prefix.pch";
-				INFOPLIST_FILE = "gumbode/gumbode-Info.plist";
+				GCC_PREFIX_HEADER = "GUmBoDE/GUmBoDE-Prefix.pch";
+				INFOPLIST_FILE = "GUmBoDE/GUmBoDE-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
-		4A50B1E5178B8D54005498DF /* Release */ = {
+		4A72AF54178E3B5E00E18799 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "gumbode/gumbode-Prefix.pch";
-				INFOPLIST_FILE = "gumbode/gumbode-Info.plist";
+				GCC_PREFIX_HEADER = "GUmBoDE/GUmBoDE-Prefix.pch";
+				INFOPLIST_FILE = "GUmBoDE/GUmBoDE-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -308,25 +292,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4A50B1C0178B8D52005498DF /* Build configuration list for PBXProject "gumbode" */ = {
+		4A72AF2F178E3B5D00E18799 /* Build configuration list for PBXProject "GUmBoDE" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4A50B1E1178B8D54005498DF /* Debug */,
-				4A50B1E2178B8D54005498DF /* Release */,
+				4A72AF50178E3B5E00E18799 /* Debug */,
+				4A72AF51178E3B5E00E18799 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4A50B1E3178B8D54005498DF /* Build configuration list for PBXNativeTarget "gumbode" */ = {
+		4A72AF52178E3B5E00E18799 /* Build configuration list for PBXNativeTarget "GUmBoDE" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4A50B1E4178B8D54005498DF /* Debug */,
-				4A50B1E5178B8D54005498DF /* Release */,
+				4A72AF53178E3B5E00E18799 /* Debug */,
+				4A72AF54178E3B5E00E18799 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 4A50B1BD178B8D52005498DF /* Project object */;
+	rootObject = 4A72AF2C178E3B5D00E18799 /* Project object */;
 }

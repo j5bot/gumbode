@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>Label</key>
+    <string>gumbode.ios-webkit-debug-proxy</string>
+    <key>ProgramArguments</key>
+    <array>
+      <string>/usr/local/opt/ios-webkit-debug-proxy/bin/ios_webkit_debug_proxy</string>
+    </array>
+    <key>StandardOutPath</key>
+    <string>/tmp/ios-webkit-debug-proxy.log</string>
+    <key>StandardErrorPath</key>
+    <string>/tmp/ios-webkit-debug-proxy.log</string>
+    <key>KeepAlive</key>
+    <dict>
+      <key>SuccessfulExit</key>
+      <false/>
+    </dict>
+  </dict>
+</plist>

@@ -1,0 +1,13 @@
+#!/bin/bash
+
+source "$1"
+
+if [ "$WEB_DIR" != "" ]; then
+	WEB_DIR=" -d $WEB_DIR"
+fi
+
+if [ "$HOST_IP" == "" ]; then
+	HOST_IP="$($(dirname $(readlink ~/.gumbode/aardwolf))/getipaddress)"
+fi
+
+eval "node ~/.gumbode/aardwolf/app.js -h $HOST_IP$WEB_DIR"

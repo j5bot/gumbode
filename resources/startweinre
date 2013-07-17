@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if [ "$HOST_IP" == "" ]; then
+	HOST_IP="$($(dirname $(readlink ~/.gumbode/aardwolf))/getipaddress)"
+fi
+
+weinre --boundHost "$HOST_IP" --httpPort 37128

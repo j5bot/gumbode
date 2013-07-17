@@ -1,0 +1,7 @@
+#!/bin/bash
+# links the starting scripts and config stuff from ~/.gumbode/ to the gumbode code
+mkdir -p ~/.gumbode/weinre
+ln -sfh $(pwd)/resources/startweinre ~/.gumbode/weinre/start
+
+ln -sfh $(pwd)/aardwolf ~/.gumbode/aardwolf
+ln -sfh $(pwd)/resources/startaardwolf ~/.gumbode/aardwolf/start

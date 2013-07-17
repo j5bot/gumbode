@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4A50B1C4178B8D52005498DF"
-               BuildableName = "gumbode.app"
-               BlueprintName = "gumbode"
-               ReferencedContainer = "container:gumbode.xcodeproj">
+               BlueprintIdentifier = "4A72AF33178E3B5E00E18799"
+               BuildableName = "GUmBoDE.app"
+               BlueprintName = "GUmBoDE"
+               ReferencedContainer = "container:GUmBoDE.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4A50B1C4178B8D52005498DF"
-            BuildableName = "gumbode.app"
-            BlueprintName = "gumbode"
-            ReferencedContainer = "container:gumbode.xcodeproj">
+            BlueprintIdentifier = "4A72AF33178E3B5E00E18799"
+            BuildableName = "GUmBoDE.app"
+            BlueprintName = "GUmBoDE"
+            ReferencedContainer = "container:GUmBoDE.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -51,10 +51,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4A50B1C4178B8D52005498DF"
-            BuildableName = "gumbode.app"
-            BlueprintName = "gumbode"
-            ReferencedContainer = "container:gumbode.xcodeproj">
+            BlueprintIdentifier = "4A72AF33178E3B5E00E18799"
+            BuildableName = "GUmBoDE.app"
+            BlueprintName = "GUmBoDE"
+            ReferencedContainer = "container:GUmBoDE.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -69,10 +69,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4A50B1C4178B8D52005498DF"
-            BuildableName = "gumbode.app"
-            BlueprintName = "gumbode"
-            ReferencedContainer = "container:gumbode.xcodeproj">
+            BlueprintIdentifier = "4A72AF33178E3B5E00E18799"
+            BuildableName = "GUmBoDE.app"
+            BlueprintName = "GUmBoDE"
+            ReferencedContainer = "container:GUmBoDE.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

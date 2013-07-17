@@ -1,8 +1,8 @@
 //
 //  main.m
-//  gumbode
+//  GUmBoDE
 //
-//  Created by j5 on 7/8/13.
+//  Created by j5 on 7/10/13.
 //  Copyright (c) 2013 gumbode. All rights reserved.
 //
 

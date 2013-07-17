@@ -7,10 +7,10 @@ JSCONSOLE=0
 AARDWOLF=0
 
 # we'll overwrite which things to inject in the ini file, if any
-source "$HOME/.gumbode/privoxy/inject.ini"
+source "$HOME/.gumbode/privoxy/services.ini"
 
 if [ $WEINRE -eq 1 ]; then
-	echo "actionfile weinre.action" >> "$PRIVOXYCONFIG"
+	echo "actionsfile weinre.action" >> "$PRIVOXYCONFIG"
 	echo "filterfile weinre.filter" >> "$PRIVOXYCONFIG"
 fi
 
@@ -25,12 +25,12 @@ if [ $JSCONSOLE -eq 1 ]; then
 	# store the new key
 	echo $JSCONSOLE_KEY_NEW > "$JSCONSOLE_FILES.key"
 	
-	echo "actionfile jsconsole.action" >> "$PRIVOXYCONFIG"
+	echo "actionsfile jsconsole.action" >> "$PRIVOXYCONFIG"
 	echo "filterfile jsconsole.filter" >> "$PRIVOXYCONFIG"
 fi
 
 if [ $AARDWOLF -eq 1 ]; then
-	echo "actionfile aardwolf.action" >> "$PRIVOXYCONFIG"
+	echo "actionsfile aardwolf.action" >> "$PRIVOXYCONFIG"
 	echo "filterfile aardwolf.filter" >> "$PRIVOXYCONFIG"
 fi
 

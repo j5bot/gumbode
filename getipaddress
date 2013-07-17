@@ -1,0 +1,31 @@
+#!/bin/bash
+
+PREFER="$1"
+
+WIFI_IP=$(ifconfig en1 | grep "inet " | cut -d\  -f2)
+WIRE_IP=$(ifconfig en0 | grep "inet " | cut -d\  -f2)
+HOST_IP=""
+
+
+if [ "$WIFI_IP" != "" ]; then
+	if [ "$WIRE_IP" != "" ]; then
+		if [ "$PREFER" == "" ]; then
+			read -p "Use WIFI (en1) adapter at ${WIFI_IP}? (y/n) " USEWIFI
+			if [ "$USEWIFI" == "y" ]; then PREFER="wifi"; fi
+		else
+			if [ "$PREFER" == "wifi" ]; then
+				HOST_IP="$WIFI_IP"
+			else
+				HOST_IP="$WIRE_IP"
+			fi
+		fi
+	else
+		HOST_IP="$WIFI_IP"
+	fi
+fi
+
+if [ "$HOST_IP" == "" ] && [ "$WIRE_IP" != "" ]; then
+	HOST_IP="$WIRE_IP"
+fi
+
+echo $HOST_IP

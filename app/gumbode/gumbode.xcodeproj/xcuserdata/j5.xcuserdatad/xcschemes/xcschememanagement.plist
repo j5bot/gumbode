@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>gumbode.xcscheme</key>
+		<key>GUmBoDE.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,7 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>4A50B1C4178B8D52005498DF</key>
+		<key>4A72AF33178E3B5E00E18799</key>
 		<dict>
 			<key>primary</key>
 			<true/>
