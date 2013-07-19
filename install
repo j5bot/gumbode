@@ -7,15 +7,20 @@ PRIVOXY_CONFIG_DIR="/usr/local/etc/privoxy"
 # brew is required
 which brew > /dev/null 2>&1
 if [ $? -ne 0 ]; then
-	echo 'Please install brew (http://mxcl.github.io/homebrew/)'
-	exit
+	# echo 'Please install brew (http://mxcl.github.io/homebrew/)'
+	# exit
+
+	# install brew
+	ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
 fi
 
 # android SDK is required
 which android > /dev/null 2>&1
 if [ $? -ne 0 ]; then
-	echo 'Please install the full Android SDK'
-	exit
+	# echo 'Please install the full Android SDK'
+	# exit
+	
+	brew install android-sdk
 fi
 
 which node > /dev/null 2>&1
@@ -47,6 +52,12 @@ if [ $? -ne 0 ]; then
 fi
 ln -sfh $(pwd)/resources/startweinre ~/.gumbode/weinre/start
 
+# install git
+which git > /dev/null 2>&1
+if [ $? -ne 0 ]; then
+	brew install git
+fi
+
 # install Aardwolf
 git clone git://github.com/lexandera/Aardwolf.git aardwolf
 cd aardwolf
@@ -55,14 +66,14 @@ cd ..
 ln -sfh $(pwd)/aardwolf ~/.gumbode/aardwolf
 ln -sfh $(pwd)/resources/startaardwolf ~/.gumbode/aardwolf/start
 
-echo 'Install Android AVD repo? THIS WILL OVERWRITE FILES IN .android (y/n)'
-read RESULT
+# echo 'Install Android AVD repo? THIS WILL OVERWRITE FILES IN .android (y/n)'
+# read RESULT
 
-if [ $RESULT == 'y' ]; then
-	# install AVD repo
-	git clone git://github.com/j5at/androidavdrepo androidavdrepo
-	cd androidavdrepo
-	chmod +x linkavd
-	./linkavd
-	cd ..
-fi
+# if [ $RESULT == 'y' ]; then
+# 	# install AVD repo
+# 	git clone git://github.com/j5at/androidavdrepo androidavdrepo
+# 	cd androidavdrepo
+# 	chmod +x linkavd
+# 	./linkavd
+# 	cd ..
+# fi

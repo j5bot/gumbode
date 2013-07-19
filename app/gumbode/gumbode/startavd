@@ -34,10 +34,12 @@ if [ -f "${AVDNAME%.*}.ini" ]; then
 	cd "$DIR"
 	# echo Installing jsHybuggger ...
 	# ("$DIR/install-jshybugger-app") &
-	echo
+    # echo
 	cp "$DIR/resources/modified.keyset" "$HOME/.android/modified.keyset" > /dev/null 2>&1
-	emulator -avd "${AVDNAME%.ini}" -keyset modified & echo $?
+	emulator -avd "${AVDNAME%.ini}" -keyset modified & echo $!
 	# mv "$HOME/.android/default.keyset.backup" "$HOME/.android/default.keyset"
+else
+    echo "Couldn't find AVD ini file"
 fi
 
 cd "$PWD"
