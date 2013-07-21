@@ -1,4 +1,4 @@
 #!/bin/bash
 
 # looks for the presence of data files for an app to see if the app is installed
-adb -s $1 shell 'if [ -d "/data/data/'"$2"'" ];then echo 1;else echo 0;fi'
+adb -s $1 shell 'if ((ls "/data/data/'"$2"'")); then echo 1; else echo 0; fi'
