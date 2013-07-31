@@ -7,6 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A4ABEDC17A6EBBE002AC9B6 /* isrunning in Resources */ = {isa = PBXBuildFile; fileRef = 4A4ABEDB17A6EBBE002AC9B6 /* isrunning */; };
+		4A4ABEDE17A70612002AC9B6 /* update-privoxy-config in Resources */ = {isa = PBXBuildFile; fileRef = 4A4ABEDD17A70612002AC9B6 /* update-privoxy-config */; };
+		4A4ABEE017A70637002AC9B6 /* update-aardwolf-config in Resources */ = {isa = PBXBuildFile; fileRef = 4A4ABEDF17A70637002AC9B6 /* update-aardwolf-config */; };
+		4A4ABEE217A71EBC002AC9B6 /* services in Resources */ = {isa = PBXBuildFile; fileRef = 4A4ABEE117A71EBC002AC9B6 /* services */; };
+		4A4ABEE617A80D3A002AC9B6 /* privoxy in Resources */ = {isa = PBXBuildFile; fileRef = 4A4ABEE517A80D3A002AC9B6 /* privoxy */; };
+		4A4ABEE817A813B0002AC9B6 /* startprivoxy in Resources */ = {isa = PBXBuildFile; fileRef = 4A4ABEE717A813B0002AC9B6 /* startprivoxy */; };
+		4A4ABEEA17A86E1B002AC9B6 /* getipaddress in Resources */ = {isa = PBXBuildFile; fileRef = 4A4ABEE917A86E1A002AC9B6 /* getipaddress */; };
+		4A4ABEF017A876D4002AC9B6 /* Menulet.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4ABEEF17A876D4002AC9B6 /* Menulet.m */; };
+		4A4ABEF217A8775A002AC9B6 /* gumbode.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A4ABEF117A8775A002AC9B6 /* gumbode.png */; };
+		4A4ABEF617A963F2002AC9B6 /* gumbode-status-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A4ABEF517A963F2002AC9B6 /* gumbode-status-icon.png */; };
+		4A5940BB179B951400F6A2E5 /* getdevices in Resources */ = {isa = PBXBuildFile; fileRef = 4A5940BA179B951400F6A2E5 /* getdevices */; };
+		4A5940BF179B963B00F6A2E5 /* getpackages in Resources */ = {isa = PBXBuildFile; fileRef = 4A5940BE179B963B00F6A2E5 /* getpackages */; };
+		4A67B6931798F4C500F76974 /* android-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A67B68E1798F4C500F76974 /* android-icon.png */; };
+		4A67B6941798F4C500F76974 /* bug-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A67B68F1798F4C500F76974 /* bug-icon.png */; };
+		4A67B6951798F4C500F76974 /* chrome-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A67B6901798F4C500F76974 /* chrome-icon.png */; };
+		4A67B6961798F4C500F76974 /* firefox-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A67B6911798F4C500F76974 /* firefox-icon.png */; };
+		4A67B6971798F4C500F76974 /* opera-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A67B6921798F4C500F76974 /* opera-icon.png */; };
+		4A67B6991798F71600F76974 /* transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A67B6981798F71600F76974 /* transparent.png */; };
+		4A67B69F1799AF0D00F76974 /* redist in Resources */ = {isa = PBXBuildFile; fileRef = 4A67B69E1799AF0D00F76974 /* redist */; };
 		4A72AF38178E3B5E00E18799 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A72AF37178E3B5E00E18799 /* Cocoa.framework */; };
 		4A72AF3A178E3B5E00E18799 /* AppleScriptObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A72AF39178E3B5E00E18799 /* AppleScriptObjC.framework */; };
 		4A72AF44178E3B5E00E18799 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4A72AF42178E3B5E00E18799 /* InfoPlist.strings */; };
@@ -15,9 +34,32 @@
 		4A72AF4C178E3B5E00E18799 /* org_gumbodeAppDelegate.applescript in Sources */ = {isa = PBXBuildFile; fileRef = 4A72AF4B178E3B5E00E18799 /* org_gumbodeAppDelegate.applescript */; };
 		4A72AF4F178E3B5E00E18799 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A72AF4D178E3B5E00E18799 /* MainMenu.xib */; };
 		4A72AF56178E3F9800E18799 /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 4A72AF55178E3F9800E18799 /* Icon.icns */; };
+		4ABB0FEC1797080E004A7367 /* getavdinfo in Resources */ = {isa = PBXBuildFile; fileRef = 4ABB0FEB1797080E004A7367 /* getavdinfo */; };
+		4ABB0FF0179727A9004A7367 /* startavd in Resources */ = {isa = PBXBuildFile; fileRef = 4ABB0FEF179727A9004A7367 /* startavd */; };
+		4ABB0FF217975E71004A7367 /* getdevices in Resources */ = {isa = PBXBuildFile; fileRef = 4ABB0FF117975E71004A7367 /* getdevices */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A4ABEDB17A6EBBE002AC9B6 /* isrunning */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = isrunning; path = ../../../isrunning; sourceTree = "<group>"; };
+		4A4ABEDD17A70612002AC9B6 /* update-privoxy-config */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = "update-privoxy-config"; path = "../../../update-privoxy-config"; sourceTree = "<group>"; };
+		4A4ABEDF17A70637002AC9B6 /* update-aardwolf-config */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = "update-aardwolf-config"; path = "../../../update-aardwolf-config"; sourceTree = "<group>"; };
+		4A4ABEE117A71EBC002AC9B6 /* services */ = {isa = PBXFileReference; lastKnownFileType = folder; name = services; path = ../../../resources/services; sourceTree = "<group>"; };
+		4A4ABEE517A80D3A002AC9B6 /* privoxy */ = {isa = PBXFileReference; lastKnownFileType = folder; name = privoxy; path = ../../../privoxy; sourceTree = "<group>"; };
+		4A4ABEE717A813B0002AC9B6 /* startprivoxy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = startprivoxy; path = ../../../startprivoxy; sourceTree = "<group>"; };
+		4A4ABEE917A86E1A002AC9B6 /* getipaddress */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = getipaddress; path = ../../../getipaddress; sourceTree = "<group>"; };
+		4A4ABEEE17A876D4002AC9B6 /* Menulet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Menulet.h; sourceTree = "<group>"; };
+		4A4ABEEF17A876D4002AC9B6 /* Menulet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Menulet.m; sourceTree = "<group>"; };
+		4A4ABEF117A8775A002AC9B6 /* gumbode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gumbode.png; path = ../../../graphics/gumbode.png; sourceTree = "<group>"; };
+		4A4ABEF517A963F2002AC9B6 /* gumbode-status-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "gumbode-status-icon.png"; path = "../../../graphics/gumbode-status-icon.png"; sourceTree = "<group>"; };
+		4A5940BA179B951400F6A2E5 /* getdevices */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = getdevices; path = ../../../getdevices; sourceTree = "<group>"; };
+		4A5940BE179B963B00F6A2E5 /* getpackages */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = getpackages; path = ../../../getpackages; sourceTree = "<group>"; };
+		4A67B68E1798F4C500F76974 /* android-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "android-icon.png"; path = "app-icons/android-icon.png"; sourceTree = "<group>"; };
+		4A67B68F1798F4C500F76974 /* bug-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bug-icon.png"; path = "app-icons/bug-icon.png"; sourceTree = "<group>"; };
+		4A67B6901798F4C500F76974 /* chrome-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "chrome-icon.png"; path = "app-icons/chrome-icon.png"; sourceTree = "<group>"; };
+		4A67B6911798F4C500F76974 /* firefox-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "firefox-icon.png"; path = "app-icons/firefox-icon.png"; sourceTree = "<group>"; };
+		4A67B6921798F4C500F76974 /* opera-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "opera-icon.png"; path = "app-icons/opera-icon.png"; sourceTree = "<group>"; };
+		4A67B6981798F71600F76974 /* transparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = transparent.png; sourceTree = "<group>"; };
+		4A67B69E1799AF0D00F76974 /* redist */ = {isa = PBXFileReference; lastKnownFileType = folder; name = redist; path = ../../../redist; sourceTree = "<group>"; };
 		4A72AF34178E3B5E00E18799 /* GUmBoDE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GUmBoDE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A72AF37178E3B5E00E18799 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		4A72AF39178E3B5E00E18799 /* AppleScriptObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppleScriptObjC.framework; path = System/Library/Frameworks/AppleScriptObjC.framework; sourceTree = SDKROOT; };
@@ -32,6 +74,9 @@
 		4A72AF4B178E3B5E00E18799 /* org_gumbodeAppDelegate.applescript */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.applescript; path = org_gumbodeAppDelegate.applescript; sourceTree = "<group>"; };
 		4A72AF4E178E3B5E00E18799 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		4A72AF55178E3F9800E18799 /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
+		4ABB0FEB1797080E004A7367 /* getavdinfo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = getavdinfo; sourceTree = "<group>"; };
+		4ABB0FEF179727A9004A7367 /* startavd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = startavd; sourceTree = "<group>"; };
+		4ABB0FF117975E71004A7367 /* getdevices */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = getdevices; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +136,8 @@
 				4A72AF4B178E3B5E00E18799 /* org_gumbodeAppDelegate.applescript */,
 				4A72AF4D178E3B5E00E18799 /* MainMenu.xib */,
 				4A72AF40178E3B5E00E18799 /* Supporting Files */,
+				4A4ABEEE17A876D4002AC9B6 /* Menulet.h */,
+				4A4ABEEF17A876D4002AC9B6 /* Menulet.m */,
 			);
 			path = GUmBoDE;
 			sourceTree = "<group>";
@@ -98,6 +145,27 @@
 		4A72AF40178E3B5E00E18799 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4A4ABEF517A963F2002AC9B6 /* gumbode-status-icon.png */,
+				4A4ABEF117A8775A002AC9B6 /* gumbode.png */,
+				4A4ABEE917A86E1A002AC9B6 /* getipaddress */,
+				4A4ABEE717A813B0002AC9B6 /* startprivoxy */,
+				4A4ABEE517A80D3A002AC9B6 /* privoxy */,
+				4A4ABEDF17A70637002AC9B6 /* update-aardwolf-config */,
+				4A4ABEE117A71EBC002AC9B6 /* services */,
+				4A4ABEDD17A70612002AC9B6 /* update-privoxy-config */,
+				4A4ABEDB17A6EBBE002AC9B6 /* isrunning */,
+				4A5940BE179B963B00F6A2E5 /* getpackages */,
+				4A5940BA179B951400F6A2E5 /* getdevices */,
+				4A67B69E1799AF0D00F76974 /* redist */,
+				4A67B6981798F71600F76974 /* transparent.png */,
+				4A67B68E1798F4C500F76974 /* android-icon.png */,
+				4A67B68F1798F4C500F76974 /* bug-icon.png */,
+				4A67B6901798F4C500F76974 /* chrome-icon.png */,
+				4A67B6911798F4C500F76974 /* firefox-icon.png */,
+				4A67B6921798F4C500F76974 /* opera-icon.png */,
+				4ABB0FF117975E71004A7367 /* getdevices */,
+				4ABB0FEF179727A9004A7367 /* startavd */,
+				4ABB0FEB1797080E004A7367 /* getavdinfo */,
 				4A72AF41178E3B5E00E18799 /* GUmBoDE-Info.plist */,
 				4A72AF42178E3B5E00E18799 /* InfoPlist.strings */,
 				4A72AF45178E3B5E00E18799 /* main.m */,
@@ -163,6 +231,27 @@
 				4A72AF4A178E3B5E00E18799 /* Credits.rtf in Resources */,
 				4A72AF4F178E3B5E00E18799 /* MainMenu.xib in Resources */,
 				4A72AF56178E3F9800E18799 /* Icon.icns in Resources */,
+				4ABB0FEC1797080E004A7367 /* getavdinfo in Resources */,
+				4ABB0FF0179727A9004A7367 /* startavd in Resources */,
+				4ABB0FF217975E71004A7367 /* getdevices in Resources */,
+				4A67B6931798F4C500F76974 /* android-icon.png in Resources */,
+				4A67B6941798F4C500F76974 /* bug-icon.png in Resources */,
+				4A67B6951798F4C500F76974 /* chrome-icon.png in Resources */,
+				4A67B6961798F4C500F76974 /* firefox-icon.png in Resources */,
+				4A67B6971798F4C500F76974 /* opera-icon.png in Resources */,
+				4A67B6991798F71600F76974 /* transparent.png in Resources */,
+				4A67B69F1799AF0D00F76974 /* redist in Resources */,
+				4A5940BB179B951400F6A2E5 /* getdevices in Resources */,
+				4A5940BF179B963B00F6A2E5 /* getpackages in Resources */,
+				4A4ABEDC17A6EBBE002AC9B6 /* isrunning in Resources */,
+				4A4ABEDE17A70612002AC9B6 /* update-privoxy-config in Resources */,
+				4A4ABEE017A70637002AC9B6 /* update-aardwolf-config in Resources */,
+				4A4ABEE217A71EBC002AC9B6 /* services in Resources */,
+				4A4ABEE617A80D3A002AC9B6 /* privoxy in Resources */,
+				4A4ABEE817A813B0002AC9B6 /* startprivoxy in Resources */,
+				4A4ABEEA17A86E1B002AC9B6 /* getipaddress in Resources */,
+				4A4ABEF217A8775A002AC9B6 /* gumbode.png in Resources */,
+				4A4ABEF617A963F2002AC9B6 /* gumbode-status-icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,6 +264,7 @@
 			files = (
 				4A72AF46178E3B5E00E18799 /* main.m in Sources */,
 				4A72AF4C178E3B5E00E18799 /* org_gumbodeAppDelegate.applescript in Sources */,
+				4A4ABEF017A876D4002AC9B6 /* Menulet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,8 +359,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				GCC_ENABLE_OBJC_GC = Yes;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GUmBoDE/GUmBoDE-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				INFOPLIST_FILE = "GUmBoDE/GUmBoDE-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -281,8 +373,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				GCC_ENABLE_OBJC_GC = Yes;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GUmBoDE/GUmBoDE-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				INFOPLIST_FILE = "GUmBoDE/GUmBoDE-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -308,6 +402,7 @@
 				4A72AF54178E3B5E00E18799 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

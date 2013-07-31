@@ -1,6 +1,6 @@
 #!/bin/bash
 
-WEB_DIR="$2"
+WEB_DIR="$1"
 
 if [ "$WEB_DIR" == "" ]; then
 	read -e -p "Enter the path to your static JS files: " WEB_DIR
@@ -10,4 +10,4 @@ if [ ! -d "$HOME/.gumbode/aardwolf" ]; then
 	ln -sfh "$(pwd)/aardwolf" "$HOME/.gumbode/aardwolf"
 fi
 
-echo -e "WEB_DIR='$WEB_DIR'" >> "$HOME/.gumbode/aardwolf.conf"
+echo -e "WEB_DIR='$WEB_DIR'" > "$HOME/.gumbode/aardwolf.conf"

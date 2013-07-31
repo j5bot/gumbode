@@ -8,13 +8,34 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "GUmBoDE/org_gumbodeAppDelegate.applescript"
-         timestampString = "395201118.680731"
+         timestampString = "396981055.230321"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "217"
-         endingLineNumber = "217"
+         startingLineNumber = "398"
+         endingLineNumber = "398"
+         landmarkName = "on badgeEmulators_(funny)"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "GUmBoDE/org_gumbodeAppDelegate.applescript"
+         timestampString = "396981055.230321"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "683"
+         endingLineNumber = "683"
          landmarkName = "on awakeFromNib()"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>
+   <SymbolicBreakpoints>
+      <AddressBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         symbolName = "*0x7fff8558cea7">
+      </AddressBreakpoint>
+   </SymbolicBreakpoints>
 </Bucket>

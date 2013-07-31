@@ -8,10 +8,6 @@ ps $(lsof -i:$AVDPORT | grep "emulator" | head -n 1 | cut -f 2 -d ' ') | grep 'e
 	echo -e "$AVDNAME\\t$AVDPORT"
 }
 
-get version {
-    
-}
-
 if [ "$1" == "" ]; then
 	adb devices > /dev/null 2>&1
 	if [ $? -ne 0 ]; then

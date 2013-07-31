@@ -2,16 +2,19 @@
 
 PRIVOXYCONFIG="$HOME/.gumbode/privoxy/conf/config"
 
-WEINRE=1
+WEINRE=0
 JSCONSOLE=0
 AARDWOLF=0
 
 # we'll overwrite which things to inject in the ini file, if any
 source "$HOME/.gumbode/privoxy/services.ini"
 
+grep -v '# dynamic' "$PRIVOXYCONFIG" > "${PRIVOXYCONFIG}.tmp"
+mv "${PRIVOXYCONFIG}.tmp" "$PRIVOXYCONFIG"
+
 if [ $WEINRE -eq 1 ]; then
-	echo "actionsfile weinre.action" >> "$PRIVOXYCONFIG"
-	echo "filterfile weinre.filter" >> "$PRIVOXYCONFIG"
+	echo "actionsfile weinre.action # dynamic" >> "$PRIVOXYCONFIG"
+	echo "filterfile weinre.filter # dynamic" >> "$PRIVOXYCONFIG"
 fi
 
 if [ $JSCONSOLE -eq 1 ]; then
@@ -25,13 +28,13 @@ if [ $JSCONSOLE -eq 1 ]; then
 	# store the new key
 	echo $JSCONSOLE_KEY_NEW > "$JSCONSOLE_FILES.key"
 	
-	echo "actionsfile jsconsole.action" >> "$PRIVOXYCONFIG"
-	echo "filterfile jsconsole.filter" >> "$PRIVOXYCONFIG"
+	echo "actionsfile jsconsole.action # dynamic" >> "$PRIVOXYCONFIG"
+	echo "filterfile jsconsole.filter # dynamic" >> "$PRIVOXYCONFIG"
 fi
 
 if [ $AARDWOLF -eq 1 ]; then
-	echo "actionsfile aardwolf.action" >> "$PRIVOXYCONFIG"
-	echo "filterfile aardwolf.filter" >> "$PRIVOXYCONFIG"
+	echo "actionsfile aardwolf.action # dynamic" >> "$PRIVOXYCONFIG"
+	echo "filterfile aardwolf.filter # dynamic" >> "$PRIVOXYCONFIG"
 fi
 
-/usr/local/sbin/privoxy --no-daemon "$PRIVOXYCONFIG"
+# /usr/local/sbin/privoxy --no-daemon "$PRIVOXYCONFIG"
