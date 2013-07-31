@@ -1,0 +1,50 @@
+#!/bin/bash
+
+function haspackage {
+	adb -s $1 shell 'if ((ls "/data/data/'"$2"'" > /dev/null 2>&1));then echo 1; else echo 0; fi'
+}
+
+function getversion {
+	echo $(adb -s $1 shell getprop ro.build.version.release | tr "\r" " " | tr "\n" " " | sed 's| ||')
+}
+
+function getname {
+
+	AVDPORT="$(echo $1 | sed 's|emulator-||')"
+	AVDNAME=$(
+	ps $(lsof -i:$AVDPORT | grep "emulator" | head -n 1 | cut -f 2 -d ' ') | grep 'emulator' | sed 's|.*-avd ||' | cut -f 1 -d ' ')
+	printf '%s:%s\n' "$AVDNAME" "$AVDPORT"
+}
+
+function _getpackages {
+
+	SERIAL="$1"
+	NAME="$(getname $1)"
+	PORT="$(echo $NAME | cut -f 2 -d ':')"
+	NAME="$(echo $NAME | cut -f 1 -d ':')"
+
+	BROWSER=$(haspackage $SERIAL com.android.browser)
+	HYBUGGER=$(haspackage $SERIAL org.jshybugger.proxy)
+	CHROME=$(haspackage $SERIAL com.android.chrome)
+	OPERA=$(haspackage $SERIAL com.opera.browser)
+	# OPERACLASSIC=$(haspackage $SERIAL com.opera.browser.classic)
+	FIREFOX=$(haspackage $SERIAL org.mozilla.firefox)
+    VERSION=$(getversion $SERIAL)
+
+	printf '%-25s\t%-4s\t%-20s\t%-5s\t%1s\t%1s\t%1s\t%1s\t%1s\n' "${NAME:0:25}" "${PORT:0:4}" "${SERIAL:0:20}" "${VERSION:0:5}" "${HYBUGGER:0:1}" "${BROWSER:0:1}" "${CHROME:0:1}" "${OPERA:0:1}" "${FIREFOX:0:1}"
+}
+
+if [ "$1" == "" ]; then
+
+	ADBLIST="$(adb devices | grep -e '-' | cut -f 1)"
+
+	for DEVICE in $ADBLIST
+	do
+		_getpackages $DEVICE
+	done
+
+else
+
+	_getpackages $1
+
+fi

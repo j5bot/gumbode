@@ -1,0 +1,18 @@
+#!/bin/bash -vx
+
+DMGDIR="$1"
+
+if [ -f "$DMGDIR/gumbode.dmg" ]; then
+	rm "$DMGDIR/gumbode.dmg"
+fi
+
+ICONSIZE=128
+MARGIN_SIZE=$((ICONSIZE / 4))
+WINDOW_SIZE=$(($((ICONSIZE * 2)) + $((MARGIN_SIZE * 3))))
+APPDIR_X=$((MARGIN_SIZE * 2))
+APP_X=$((ICONSIZE + $((MARGIN_SIZE * 3))))
+WINDOW_HEIGHT=$((ICONSIZE + $((MARGIN_SIZE * 4))))
+
+OFFSCREEN=$((WINDOW_SIZE + $((MARGIN_SIZE * 2))))
+
+/usr/local/bin/create-dmg --volname "GUmBoDE"	--window-size $WINDOW_SIZE $WINDOW_HEIGHT 	--icon .VolumeIcon.icns $OFFSCREEN 0	--icon .DS_Store $OFFSCREEN 0	--icon .Trashes $OFFSCREEN 0	--icon .fseventsd $OFFSCREEN 0	--icon-size $ICONSIZE --volicon "$DMGDIR/gumbode-icon/Icon.icns" --app-drop-link $APPDIR_X $MARGIN_SIZE --app-drop-link $APPDIR_X $MARGIN_SIZE --icon GUmBoDE.app $APP_X $MARGIN_SIZE --icon gumbode.app $APP_X $MARGIN_SIZE --no-internet-enable "$DMGDIR/gumbode.dmg" "$DMGDIR/GUmBoDE/Build/Products/Release"

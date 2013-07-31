@@ -1,0 +1,53 @@
+#!/bin/bash
+
+PWD=$(dirname $0)
+
+HOST_IP="$1"
+AARDWOLF_MATCH="$2"
+
+if [ "$HOST_IP" == "" ]; then
+	HOST_IP="$($PWD/getipaddress)"
+fi
+
+if [ "$AARDWOLF_MATCH" == "" ]; then
+	AARDWOLF_MATCH='{{AARDWOLF_MATCH}}'
+fi
+
+PRIVOXY_DIR="$HOME/.gumbode/privoxy"
+PRIVOXY_HOST="$HOST_IP"
+PRIVOXY_PORT="8118"
+
+WEINRE_HOST="$HOST_IP:37128"
+AARDWOLF_HOST="$HOST_IP:8500"
+
+JSCONSOLE_HOST="jsconsole.com"
+JSCONSOLE_KEY="$(python  -c 'import uuid; print uuid.uuid1()')"
+# echo 'jsconsole key: '$JSCONSOLE_KEY
+# open 'http://jsconsole.com/?%3Alisten%20'$JSCONSOLE_KEY
+
+rm -rf "$PRIVOXY_DIR/conf" > /dev/null 2>&1
+cp -R "$PWD/privoxy/conf/default" "$PRIVOXY_DIR/conf"
+ln -sfh "$PWD/privoxy/conf/templates" "$PRIVOXY_DIR/conf/templates"
+
+echo "$PRIVOXY_DIR/conf"
+
+cd "$PRIVOXY_DIR/conf"
+FILELIST="$(ls .)"
+
+for FILE in $FILELIST
+do
+	if [ -f "$FILE" ]; then
+		sed -i '' \
+			-e 's|{{PRIVOXY_HOST}}|'"$PRIVOXY_HOST"'|g' \
+			-e 's|{{PRIVOXY_PORT}}|'"$PRIVOXY_PORT"'|g' \
+			-e 's|{{PRIVOXY_DIR}}|'"$PRIVOXY_DIR"'|g' \
+			-e 's|{{AARDWOLF_HOST}}|'"$AARDWOLF_HOST"'|g' \
+			-e 's|{{AARDWOLF_MATCH}}|'"$AARDWOLF_MATCH"'|g' \
+			-e 's|{{WEINRE_HOST}}|'"$WEINRE_HOST"'|g' \
+			-e 's|{{JSCONSOLE_HOST}}|'"$JSCONSOLE_HOST"'|g' \
+			-e 's|{{JSCONSOLE_KEY}}|'"$JSCONSOLE_KEY"'|g' \
+		"$FILE"
+	fi
+done
+
+cd "$PWD"

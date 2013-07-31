@@ -1,0 +1,11 @@
+2013-06-28 16:52:27.247 00000300 Fatal error: can't load re_filterfile '/Users/j5/github/debugmobile/Privoxy/conf/jsconsole.action': No such file or directory
+2013-06-28 16:54:21.899 00000300 Fatal error: can't load actions file '/Users/j5/github/debugmobile/Privoxy/conf/weinre.action': No such file or directory. Note that beginning with Privoxy 3.0.7, actions files have to be specified with their complete file names.
+2013-06-28 16:54:52.097 00000300 Fatal error: can't load actions file '/Users/j5/github/debugmobile/Privoxy/conf/weinre.action': Missing trailing '}' in action section starting at line (2): {
+2013-06-28 17:00:38.465 00000300 Fatal error: can't load actions file '/Users/j5/github/debugmobile/Privoxy/conf/weinre.action': line 4 should begin with a '{': +filter{weinre}
+2013-06-28 17:02:46.278 00000300 Re-Filter: Reading in filter "weinre" ("Inject the weinre target script into the current page.")
+2013-06-28 17:02:46.279 00000300 Re-Filter: Adding re_filter job 's|(<head[^>]*>)|$1\n<script src="{{WEINRE_HOST}}/target/target-script-min.js"></script>|' to filter weinre succeeded.
+2013-06-28 17:02:46.279 00000300 Re-Filter: Reading in filter "aardwolf" ("Inject the aardwolf script into the current page, modify script tags for local to go through aardwolf")
+2013-06-28 17:02:46.279 00000300 Re-Filter: Adding re_filter job 's|(<head[^>]*>)|$1\n<script src="{{AARDWOLF_HOST}}/aardwolf.js"></script>|' to filter aardwolf succeeded.
+2013-06-28 17:02:46.279 00000300 Re-Filter: Adding re_filter job 's|"/([^/"]*.js)"|"//{{AARDWOLF_HOST}}/$1.js"|g' to filter aardwolf succeeded.
+2013-06-28 17:02:46.279 00000300 Re-Filter: Reading in filter "jsconsole" ("Inject the jsconsole script into the current page")
+2013-06-28 17:02:46.279 00000300 Re-Filter: Adding re_filter job 's|(<head[^>]*>)|$1\n<script src="{{JSCONSOLE_HOST}}/remote.js?{{JSCONSOLE_KEY}}"></script>|' to filter jsconsole succeeded.

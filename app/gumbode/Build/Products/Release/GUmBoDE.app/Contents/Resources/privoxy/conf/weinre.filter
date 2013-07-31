@@ -1,0 +1,3 @@
+# weinre filter
+FILTER: weinre Inject the weinre target script into the current page.
+s|(<head[^>]*>)|$1\n<script src="http://10.2.1.139:37128/target/target-script-min.js"></script>|

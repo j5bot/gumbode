@@ -1,0 +1,45 @@
+#!/bin/bash
+
+PWD="$(pwd)"
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+cd "$HOME/.android/avd"
+
+if [ $# -eq 0 ]; then
+	"$DIR/getavdinfo"
+
+	echo
+	read -e -p "Enter the name of the AVD to start: " AVDNAME
+	echo
+
+	if [ -f "${AVDNAME%.*}.ini" ]; then
+
+		echo Starting $(basename $AVDNAME) ...
+		echo
+		echo Using modified keyset ...
+		echo You may use L or R control keys for all emulator commands
+		echo Commands which by default are mapped to F1 through F5 are also mapped to R ALT + 1-5
+		echo Commands which by default are mapped to F6 through F9 are also mapped to L ALT + 6-9
+		echo L or R control + P will move you to the previous layout \(portrait/landscape\)
+		echo L or R control + L will move you to the next layout \(portrait/landscape\)
+		echo
+
+	fi
+else
+	AVDNAME="$1"
+fi
+
+if [ -f "${AVDNAME%.*}.ini" ]; then
+	
+	cd "$DIR"
+	# echo Installing jsHybuggger ...
+	# ("$DIR/install-jshybugger-app") &
+    # echo
+	cp "$DIR/resources/modified.keyset" "$HOME/.android/modified.keyset" > /dev/null 2>&1
+	emulator -avd "${AVDNAME%.ini}" -keyset modified & echo $!
+	# mv "$HOME/.android/default.keyset.backup" "$HOME/.android/default.keyset"
+else
+    echo "Couldn't find AVD ini file"
+fi
+
+cd "$PWD"

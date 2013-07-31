@@ -1,0 +1,40 @@
+#!/bin/bash
+
+PRIVOXYCONFIG="$HOME/.gumbode/privoxy/conf/config"
+
+WEINRE=0
+JSCONSOLE=0
+AARDWOLF=0
+
+# we'll overwrite which things to inject in the ini file, if any
+source "$HOME/.gumbode/privoxy/services.ini"
+
+grep -v '# dynamic' "$PRIVOXYCONFIG" > "${PRIVOXYCONFIG}.tmp"
+mv "${PRIVOXYCONFIG}.tmp" "$PRIVOXYCONFIG"
+
+if [ $WEINRE -eq 1 ]; then
+	echo "actionsfile weinre.action # dynamic" >> "$PRIVOXYCONFIG"
+	echo "filterfile weinre.filter # dynamic" >> "$PRIVOXYCONFIG"
+fi
+
+if [ $JSCONSOLE -eq 1 ]; then
+	# prefix
+	JSCONSOLE_FILES="$HOME/.gumbode/privoxy/conf/jsconsole."
+
+	# generate a new key for JSConsole
+	JSCONSOLE_KEY_NEW="$(python  -c 'import uuid; print uuid.uuid1()')"
+	# replace the old key with the new one
+	sed -i '' -e 's|'$(cat "$HOME/.gumbode/privoxy/conf/jsconsole.key")'|'"$JSCONSOLE_KEY_NEW"'|' "$JSCONSOLE_FILES.filter"
+	# store the new key
+	echo $JSCONSOLE_KEY_NEW > "$JSCONSOLE_FILES.key"
+	
+	echo "actionsfile jsconsole.action # dynamic" >> "$PRIVOXYCONFIG"
+	echo "filterfile jsconsole.filter # dynamic" >> "$PRIVOXYCONFIG"
+fi
+
+if [ $AARDWOLF -eq 1 ]; then
+	echo "actionsfile aardwolf.action # dynamic" >> "$PRIVOXYCONFIG"
+	echo "filterfile aardwolf.filter # dynamic" >> "$PRIVOXYCONFIG"
+fi
+
+# /usr/local/sbin/privoxy --no-daemon "$PRIVOXYCONFIG"

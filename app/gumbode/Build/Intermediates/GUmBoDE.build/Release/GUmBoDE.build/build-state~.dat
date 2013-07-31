@@ -1,0 +1,686 @@
+TGUmBoDE
+v5
+r1
+cCheck dependencies
+cProcessInfoPlistFile /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Info.plist GUmBoDE/GUmBoDE-Info.plist
+cOSACompile GUmBoDE/org_gumbodeAppDelegate.applescript
+cProcessPCH /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Intermediates/PrecompiledHeaders/GUmBoDE-Prefix-cknhuzpijqgkeofdxdxqhivxelkv/GUmBoDE-Prefix.pch.gch GUmBoDE/GUmBoDE-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvmgcc42
+cCompileC Build/Intermediates/GUmBoDE.build/Release/GUmBoDE.build/Objects-normal/x86_64/main.o /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/GUmBoDE/main.m normal x86_64 objective-c com.apple.compilers.llvmgcc42
+cCompileC Build/Intermediates/GUmBoDE.build/Release/GUmBoDE.build/Objects-normal/x86_64/Menulet.o /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/GUmBoDE/Menulet.m normal x86_64 objective-c com.apple.compilers.llvmgcc42
+cLd /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/MacOS/GUmBoDE normal x86_64
+cGenerateDSYMFile /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app.dSYM /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/MacOS/GUmBoDE
+cCopyStringsFile /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources/en.lproj/InfoPlist.strings GUmBoDE/en.lproj/InfoPlist.strings
+cCpResource GUmBoDE/en.lproj/Credits.rtf Build/Products/Release/GUmBoDE.app/Contents/Resources/en.lproj/Credits.rtf
+cCompileXIB /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/GUmBoDE/en.lproj/MainMenu.xib
+cCpResource Icon.icns Build/Products/Release/GUmBoDE.app/Contents/Resources/Icon.icns
+cCpResource GUmBoDE/getavdinfo Build/Products/Release/GUmBoDE.app/Contents/Resources/getavdinfo
+cCpResource GUmBoDE/startavd Build/Products/Release/GUmBoDE.app/Contents/Resources/startavd
+cCpResource GUmBoDE/getdevices Build/Products/Release/GUmBoDE.app/Contents/Resources/getdevices
+cCpResource GUmBoDE/../../../getdevices Build/Products/Release/GUmBoDE.app/Contents/Resources/getdevices
+cCpResource GUmBoDE/app-icons/android-icon.png Build/Products/Release/GUmBoDE.app/Contents/Resources/android-icon.png
+cCpResource GUmBoDE/app-icons/bug-icon.png Build/Products/Release/GUmBoDE.app/Contents/Resources/bug-icon.png
+cCpResource GUmBoDE/app-icons/chrome-icon.png Build/Products/Release/GUmBoDE.app/Contents/Resources/chrome-icon.png
+cCpResource GUmBoDE/app-icons/firefox-icon.png Build/Products/Release/GUmBoDE.app/Contents/Resources/firefox-icon.png
+cCpResource GUmBoDE/app-icons/opera-icon.png Build/Products/Release/GUmBoDE.app/Contents/Resources/opera-icon.png
+cCpResource GUmBoDE/transparent.png Build/Products/Release/GUmBoDE.app/Contents/Resources/transparent.png
+cCpResource GUmBoDE/../../../redist Build/Products/Release/GUmBoDE.app/Contents/Resources/redist
+cCpResource GUmBoDE/../../../getpackages Build/Products/Release/GUmBoDE.app/Contents/Resources/getpackages
+cCpResource GUmBoDE/../../../isrunning Build/Products/Release/GUmBoDE.app/Contents/Resources/isrunning
+cCpResource GUmBoDE/../../../update-privoxy-config Build/Products/Release/GUmBoDE.app/Contents/Resources/update-privoxy-config
+cCpResource GUmBoDE/../../../resources/services Build/Products/Release/GUmBoDE.app/Contents/Resources/services
+cCpResource GUmBoDE/../../../update-aardwolf-config Build/Products/Release/GUmBoDE.app/Contents/Resources/update-aardwolf-config
+cCpResource GUmBoDE/../../../privoxy Build/Products/Release/GUmBoDE.app/Contents/Resources/privoxy
+cCpResource GUmBoDE/../../../startprivoxy Build/Products/Release/GUmBoDE.app/Contents/Resources/startprivoxy
+cCpResource GUmBoDE/../../../getipaddress Build/Products/Release/GUmBoDE.app/Contents/Resources/getipaddress
+cCpResource GUmBoDE/../../../graphics/gumbode.png Build/Products/Release/GUmBoDE.app/Contents/Resources/gumbode.png
+cCpResource GUmBoDE/../../../graphics/gumbode-status-icon.png Build/Products/Release/GUmBoDE.app/Contents/Resources/gumbode-status-icon.png
+cTouch /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk
+c000000004F90F72900000000000000CC
+t1334900521
+s204
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/System/Library/Frameworks/AppleScriptObjC.framework/AppleScriptObjC
+c00000000519197B7000000000000AF2C
+t1368496055
+s44844
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/System/Library/Frameworks/AppleScriptObjC.framework/Headers/AppleScriptObjC.h
+c00000000519197B70000000000000100
+t1368496055
+s256
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/System/Library/Frameworks/Cocoa.framework/Cocoa
+c00000000519197B80000000000002470
+t1368496056
+s9328
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h
+c00000000519197B800000000000001E5
+t1368496056
+s485
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c00000000519197B80000000000001534
+t1368496056
+s5428
+
+N/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Intermediates/GUmBoDE.build/Release/GUmBoDE.build/Objects-normal/x86_64/GUmBoDE.LinkFileList
+c0000000051F943EA0000000000000103
+t1375290346
+s259
+
+N/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Intermediates/GUmBoDE.build/Release/GUmBoDE.build/Objects-normal/x86_64/Menulet.o
+t2
+s0
+
+N/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Intermediates/GUmBoDE.build/Release/GUmBoDE.build/Objects-normal/x86_64/main.o
+t2
+s0
+
+N/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Intermediates/PrecompiledHeaders/GUmBoDE-Prefix-cknhuzpijqgkeofdxdxqhivxelkv/GUmBoDE-Prefix.pch.gch
+t2
+s0
+
+N/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app
+t2
+s0
+
+N/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app.dSYM
+t2
+s0
+
+N/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Info.plist
+t2
+s0
+
+N/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/MacOS/GUmBoDE
+t2
+s0
+
+N/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/PkgInfo
+t2
+s0
+
+N/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources/Icon.icns
+t2
+s0
+
+N/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources/android-icon.png
+t2
+s0
+
+N/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources/bug-icon.png
+t2
+s0
+
+N/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources/chrome-icon.png
+t2
+s0
+
+N/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources/en.lproj/Credits.rtf
+t2
+s0
+
+N/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources/en.lproj/InfoPlist.strings
+t2
+s0
+
+N/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources/en.lproj/MainMenu.nib
+t2
+s0
+
+N/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources/firefox-icon.png
+t2
+s0
+
+N/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources/getavdinfo
+t2
+s0
+
+N/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources/getdevices
+t2
+s0
+
+N/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources/getipaddress
+t2
+s0
+
+N/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources/getpackages
+t2
+s0
+
+N/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources/gumbode-status-icon.png
+t2
+s0
+
+N/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources/gumbode.png
+t2
+s0
+
+N/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources/isrunning
+t2
+s0
+
+N/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources/opera-icon.png
+t2
+s0
+
+N/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources/org_gumbodeAppDelegate.scpt
+t2
+s0
+
+N/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources/privoxy
+t2
+s0
+
+N/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources/redist
+t2
+s0
+
+N/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources/services
+t2
+s0
+
+N/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources/startavd
+t2
+s0
+
+N/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources/startprivoxy
+t2
+s0
+
+N/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources/transparent.png
+t2
+s0
+
+N/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources/update-aardwolf-config
+t2
+s0
+
+N/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources/update-privoxy-config
+t2
+s0
+
+N/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/GUmBoDE/../../../getdevices
+c0000000051F7CABA0000000000000237
+t1375193786
+s567
+
+N/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/GUmBoDE/../../../getipaddress
+c0000000051DF159C000000000000024F
+t1373574556
+s591
+
+N/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/GUmBoDE/../../../getpackages
+c0000000051EB63680000000000000559
+t1374380904
+s1369
+
+N/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/GUmBoDE/../../../graphics/gumbode-status-icon.png
+c0000000051F92C400000000000000F6E
+t1375284288
+s3950
+
+N/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/GUmBoDE/../../../graphics/gumbode.png
+c0000000051DDA68C000000000001013F
+t1373480588
+s65855
+
+N/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/GUmBoDE/../../../isrunning
+c0000000051F7CD23000000000000005D
+t1375194403
+s93
+
+N/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/GUmBoDE/../../../privoxy
+c0000000051D2FBF20000000000000088
+t1372781554
+s136
+
+N/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/GUmBoDE/../../../redist
+c0000000051E97DCD0000000000000110
+t1374256589
+s272
+
+N/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/GUmBoDE/../../../resources/services
+c0000000051F6E7AE00000000000000CC
+t1375135662
+s204
+
+N/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/GUmBoDE/../../../startprivoxy
+c0000000051F834B600000000000004F2
+t1375220918
+s1266
+
+N/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/GUmBoDE/../../../update-aardwolf-config
+c0000000051F6D0BD000000000000011E
+t1375129789
+s286
+
+N/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/GUmBoDE/../../../update-privoxy-config
+c0000000051F7E34F00000000000004FA
+t1375200079
+s1274
+
+N/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/GUmBoDE/GUmBoDE-Prefix.pch
+c0000000051DE03DE0000000000000091
+t1373504478
+s145
+i<Cocoa/Cocoa.h>
+
+N/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/GUmBoDE/Menulet.h
+c0000000051F840D1000000000000014B
+t1375224017
+s331
+i<Cocoa/Cocoa.h>
+i<Foundation/Foundation.h>
+
+N/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/GUmBoDE/Menulet.m
+c0000000051F92AA6000000000000037A
+t1375283878
+s890
+i"Menulet.h"
+
+N/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/GUmBoDE/app-icons/android-icon.png
+c0000000051E8BAA500000000000002DE
+t1374206629
+s734
+
+N/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/GUmBoDE/app-icons/bug-icon.png
+c0000000051E8BB720000000000000316
+t1374206834
+s790
+
+N/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/GUmBoDE/app-icons/chrome-icon.png
+c0000000051E8BADB0000000000000314
+t1374206683
+s788
+
+N/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/GUmBoDE/app-icons/firefox-icon.png
+c0000000051E8BAF10000000000000302
+t1374206705
+s770
+
+N/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/GUmBoDE/app-icons/opera-icon.png
+c0000000051E8BACB00000000000002E5
+t1374206667
+s741
+
+N/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/GUmBoDE/en.lproj/Credits.rtf
+c0000000051DE03DE00000000000001B4
+t1373504478
+s436
+
+N/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/GUmBoDE/en.lproj/InfoPlist.strings
+c0000000051DE03DE000000000000002D
+t1373504478
+s45
+
+N/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/GUmBoDE/en.lproj/MainMenu.xib
+c0000000051F9309E0000000000057F62
+t1375285406
+s360290
+
+N/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/GUmBoDE/getavdinfo
+c0000000051E6CFBC00000000000006D3
+t1374080956
+s1747
+
+N/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/GUmBoDE/getdevices
+c0000000051E6F2B20000000000000237
+t1374089906
+s567
+
+N/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/GUmBoDE/main.m
+c0000000051DE03DE0000000000000156
+t1373504478
+s342
+i<Cocoa/Cocoa.h>
+i<AppleScriptObjC/AppleScriptObjC.h>
+
+N/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/GUmBoDE/org_gumbodeAppDelegate.applescript
+c0000000051F93C0E0000000000006A0D
+t1375288334
+s27149
+
+N/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/GUmBoDE/startavd
+c0000000051E707E900000000000004B5
+t1374095337
+s1205
+
+N/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/GUmBoDE/transparent.png
+c0000000051E8BF6E0000000000000061
+t1374207854
+s97
+
+N/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Icon.icns
+c0000000051DDA6D20000000000083122
+t1373480658
+s536866
+
+NGUmBoDE/GUmBoDE-Info.plist
+c0000000051DE081800000000000004A4
+t1373505560
+s1188
+
+CBuild AST from /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/GUmBoDE/Menulet.m
+r0
+
+CBuild AST from /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/GUmBoDE/main.m
+r0
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies6477696a7ba9b741^20b2a86a7ba9b741^-157"Warning: Multiple build commands for output file /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources/getdevices1(21%IDEActivityLogMessage2@156"Warning: Multiple build commands for output file /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources/getdevices-396983146#18446744073709551615#0#-1#27"com.apple.dt.IDE.LogMessage-27"Dependency Analysis Warning--0#1#0#--18"Check dependencies36"023846E2-80B8-4FDD-ACA9-FEB74E2EBA4A-
+
+CCompileC Build/Intermediates/GUmBoDE.build/Release/GUmBoDE.build/Objects-normal/x86_64/Menulet.o /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/GUmBoDE/Menulet.m normal x86_64 objective-c com.apple.compilers.llvmgcc42
+s396983150.354948
+e396983150.460110
+r1
+xCompileC
+xBuild/Intermediates/GUmBoDE.build/Release/GUmBoDE.build/Objects-normal/x86_64/Menulet.o
+x/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/GUmBoDE/Menulet.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvmgcc42
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection68"Compile /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/GUmBoDE/Menulet.m88f55a6e7ba9b741^c5c9756e7ba9b741^---0#0#0#-19%DVTDocumentLocation2@76"file://localhost/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/GUmBoDE/Menulet.m0000000000000000^2217"CompileC Build/Intermediates/GUmBoDE.build/Release/GUmBoDE.build/Objects-normal/x86_64/Menulet.o GUmBoDE/Menulet.m normal x86_64 objective-c com.apple.compilers.llvmgcc42    cd /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -Wuninitialized -Wshorten-64-to-32 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -mmacosx-version-min=10.7 -gdwarf-2 -fvisibility=hidden -iquote /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Intermediates/GUmBoDE.build/Release/GUmBoDE.build/GUmBoDE-generated-files.hmap -I/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Intermediates/GUmBoDE.build/Release/GUmBoDE.build/GUmBoDE-own-target-headers.hmap -I/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Intermediates/GUmBoDE.build/Release/GUmBoDE.build/GUmBoDE-all-target-headers.hmap -iquote /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Intermediates/GUmBoDE.build/Release/GUmBoDE.build/GUmBoDE-project-headers.hmap -I/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Intermediates/GUmBoDE.build/Release/GUmBoDE.build/DerivedSources/x86_64 -I/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Intermediates/GUmBoDE.build/Release/GUmBoDE.build/DerivedSources -F/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release -include /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Intermediates/PrecompiledHeaders/GUmBoDE-Prefix-cknhuzpijqgkeofdxdxqhivxelkv/GUmBoDE-Prefix.pch -c /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/GUmBoDE/Menulet.m -o /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Intermediates/GUmBoDE.build/Release/GUmBoDE.build/Objects-normal/x86_64/Menulet.o36"55A8B820-FA30-44B9-B3C7-6D6DAC2C7493-
+
+CCompileC Build/Intermediates/GUmBoDE.build/Release/GUmBoDE.build/Objects-normal/x86_64/main.o /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/GUmBoDE/main.m normal x86_64 objective-c com.apple.compilers.llvmgcc42
+s396983150.354944
+e396983150.474630
+r1
+xCompileC
+xBuild/Intermediates/GUmBoDE.build/Release/GUmBoDE.build/Objects-normal/x86_64/main.o
+x/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/GUmBoDE/main.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvmgcc42
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection65"Compile /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/GUmBoDE/main.m56f15a6e7ba9b741^8c81796e7ba9b741^---0#0#0#-19%DVTDocumentLocation2@73"file://localhost/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/GUmBoDE/main.m0000000000000000^2205"CompileC Build/Intermediates/GUmBoDE.build/Release/GUmBoDE.build/Objects-normal/x86_64/main.o GUmBoDE/main.m normal x86_64 objective-c com.apple.compilers.llvmgcc42    cd /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -Wuninitialized -Wshorten-64-to-32 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -mmacosx-version-min=10.7 -gdwarf-2 -fvisibility=hidden -iquote /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Intermediates/GUmBoDE.build/Release/GUmBoDE.build/GUmBoDE-generated-files.hmap -I/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Intermediates/GUmBoDE.build/Release/GUmBoDE.build/GUmBoDE-own-target-headers.hmap -I/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Intermediates/GUmBoDE.build/Release/GUmBoDE.build/GUmBoDE-all-target-headers.hmap -iquote /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Intermediates/GUmBoDE.build/Release/GUmBoDE.build/GUmBoDE-project-headers.hmap -I/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Intermediates/GUmBoDE.build/Release/GUmBoDE.build/DerivedSources/x86_64 -I/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Intermediates/GUmBoDE.build/Release/GUmBoDE.build/DerivedSources -F/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release -include /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Intermediates/PrecompiledHeaders/GUmBoDE-Prefix-cknhuzpijqgkeofdxdxqhivxelkv/GUmBoDE-Prefix.pch -c /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/GUmBoDE/main.m -o /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Intermediates/GUmBoDE.build/Release/GUmBoDE.build/Objects-normal/x86_64/main.o36"FE42D68F-B66A-4B25-8316-667AF6BAB987-
+
+CCompileXIB /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/GUmBoDE/en.lproj/MainMenu.xib
+s396983151.195440
+e396983152.129185
+r1
+xCompileXIB
+x/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/GUmBoDE/en.lproj/MainMenu.xib
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection82"Compiling /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/GUmBoDE/en.lproj/MainMenu.xib1215326f7ba9b741^a91221707ba9b741^---0#0#0#-19%DVTDocumentLocation2@88"file://localhost/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/GUmBoDE/en.lproj/MainMenu.xib0000000000000000^616"CompileXIB GUmBoDE/en.lproj/MainMenu.xib    cd /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources/en.lproj/MainMenu.nib /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/GUmBoDE/en.lproj/MainMenu.xib --sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk36"5B6BB00C-3DCA-422A-8462-A42A846DAF22-
+
+CCopyStringsFile /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources/en.lproj/InfoPlist.strings GUmBoDE/en.lproj/InfoPlist.strings
+s396983151.194714
+e396983151.380706
+r1
+xCopyStringsFile
+x/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources/en.lproj/InfoPlist.strings
+xGUmBoDE/en.lproj/InfoPlist.strings
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection39"Copy GUmBoDE/en.lproj/InfoPlist.stringsdee6316f7ba9b741^965e8f6f7ba9b741^---0#0#0#-19%DVTDocumentLocation2@93"file://localhost/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/GUmBoDE/en.lproj/InfoPlist.strings0000000000000000^416"CopyStringsFile Build/Products/Release/GUmBoDE.app/Contents/Resources/en.lproj/InfoPlist.strings GUmBoDE/en.lproj/InfoPlist.strings    cd /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding UTF-16 --outdir /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources/en.lproj -- GUmBoDE/en.lproj/InfoPlist.strings36"4ECAB007-AF0A-4361-A472-68C6F0B6DAA5-
+
+CCpResource GUmBoDE/../../../getdevices Build/Products/Release/GUmBoDE.app/Contents/Resources/getdevices
+s396983151.195728
+e396983151.205194
+r1
+xCpResource
+xGUmBoDE/../../../getdevices
+xBuild/Products/Release/GUmBoDE.app/Contents/Resources/getdevices
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection69"Copy Build/Products/Release/GUmBoDE.app/Contents/Resources/getdevices342c326f7ba9b741^a987346f7ba9b741^---0#0#0#-19%DVTDocumentLocation2@123"file://localhost/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources/getdevices000000000080d041^560"CpResource GUmBoDE/../../../getdevices Build/Products/Release/GUmBoDE.app/Contents/Resources/getdevices    cd /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/GUmBoDE/../../../getdevices /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources36"B7613F6D-BC46-405A-B8C8-9ED26EADC60E-
+
+CCpResource GUmBoDE/../../../getipaddress Build/Products/Release/GUmBoDE.app/Contents/Resources/getipaddress
+s396983151.515512
+e396983151.594118
+r1
+xCpResource
+xGUmBoDE/../../../getipaddress
+xBuild/Products/Release/GUmBoDE.app/Contents/Resources/getipaddress
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Copy Build/Products/Release/GUmBoDE.app/Contents/Resources/getipaddress331b846f7ba9b741^f6999f6f7ba9b741^---0#0#0#-19%DVTDocumentLocation2@125"file://localhost/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources/getipaddress000000000080d041^566"CpResource GUmBoDE/../../../getipaddress Build/Products/Release/GUmBoDE.app/Contents/Resources/getipaddress    cd /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/GUmBoDE/../../../getipaddress /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources36"FBEFB6FB-13FD-4D93-A251-352384D80695-
+
+CCpResource GUmBoDE/../../../getpackages Build/Products/Release/GUmBoDE.app/Contents/Resources/getpackages
+s396983151.381971
+e396983151.496156
+r1
+xCpResource
+xGUmBoDE/../../../getpackages
+xBuild/Products/Release/GUmBoDE.app/Contents/Resources/getpackages
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection70"Copy Build/Products/Release/GUmBoDE.app/Contents/Resources/getpackages2ae1616f7ba9b741^f7728f6f7ba9b741^---0#0#0#-19%DVTDocumentLocation2@124"file://localhost/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources/getpackages000000000080d041^563"CpResource GUmBoDE/../../../getpackages Build/Products/Release/GUmBoDE.app/Contents/Resources/getpackages    cd /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/GUmBoDE/../../../getpackages /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources36"8A6475C2-5D50-4BA9-95B3-A09AA2CD6BC5-
+
+CCpResource GUmBoDE/../../../graphics/gumbode-status-icon.png Build/Products/Release/GUmBoDE.app/Contents/Resources/gumbode-status-icon.png
+s396983151.553653
+e396983151.677906
+r1
+xCpResource
+xGUmBoDE/../../../graphics/gumbode-status-icon.png
+xBuild/Products/Release/GUmBoDE.app/Contents/Resources/gumbode-status-icon.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection82"Copy Build/Products/Release/GUmBoDE.app/Contents/Resources/gumbode-status-icon.pngc9cc8d6f7ba9b741^728bad6f7ba9b741^---0#0#0#-19%DVTDocumentLocation2@136"file://localhost/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources/gumbode-status-icon.png000000000080d041^617"CpResource GUmBoDE/../../../graphics/gumbode-status-icon.png Build/Products/Release/GUmBoDE.app/Contents/Resources/gumbode-status-icon.png    cd /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/GUmBoDE/../../../graphics/gumbode-status-icon.png /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources36"065081BE-55B9-4E28-9F27-16CBC6E971E4-
+
+CCpResource GUmBoDE/../../../graphics/gumbode.png Build/Products/Release/GUmBoDE.app/Contents/Resources/gumbode.png
+s396983151.553239
+e396983151.683985
+r1
+xCpResource
+xGUmBoDE/../../../graphics/gumbode.png
+xBuild/Products/Release/GUmBoDE.app/Contents/Resources/gumbode.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection70"Copy Build/Products/Release/GUmBoDE.app/Contents/Resources/gumbode.pngbbb48d6f7ba9b741^a818af6f7ba9b741^---0#0#0#-19%DVTDocumentLocation2@124"file://localhost/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources/gumbode.png000000000080d041^581"CpResource GUmBoDE/../../../graphics/gumbode.png Build/Products/Release/GUmBoDE.app/Contents/Resources/gumbode.png    cd /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/GUmBoDE/../../../graphics/gumbode.png /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources36"1098D92A-C793-4A15-A9C6-CDA6B039A6FA-
+
+CCpResource GUmBoDE/../../../isrunning Build/Products/Release/GUmBoDE.app/Contents/Resources/isrunning
+s396983151.381981
+e396983151.513744
+r1
+xCpResource
+xGUmBoDE/../../../isrunning
+xBuild/Products/Release/GUmBoDE.app/Contents/Resources/isrunning
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection68"Copy Build/Products/Release/GUmBoDE.app/Contents/Resources/isrunning55db616f7ba9b741^9b748f6f7ba9b741^---0#0#0#-19%DVTDocumentLocation2@122"file://localhost/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources/isrunning000000000080d041^557"CpResource GUmBoDE/../../../isrunning Build/Products/Release/GUmBoDE.app/Contents/Resources/isrunning    cd /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/GUmBoDE/../../../isrunning /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources36"F89B04DF-E29D-4C5B-AD1C-694C5FEB0CAF-
+
+CCpResource GUmBoDE/../../../privoxy Build/Products/Release/GUmBoDE.app/Contents/Resources/privoxy
+s396983151.450550
+e396983152.146810
+r1
+xCpResource
+xGUmBoDE/../../../privoxy
+xBuild/Products/Release/GUmBoDE.app/Contents/Resources/privoxy
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection66"Copy Build/Products/Release/GUmBoDE.app/Contents/Resources/privoxy8869736f7ba9b741^af9825707ba9b741^---0#0#0#-19%DVTDocumentLocation2@120"file://localhost/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources/privoxy000000000080d041^551"CpResource GUmBoDE/../../../privoxy Build/Products/Release/GUmBoDE.app/Contents/Resources/privoxy    cd /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/GUmBoDE/../../../privoxy /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources36"C747FEAE-A1F4-4A3D-9175-8938C6FF3FDB-
+
+CCpResource GUmBoDE/../../../redist Build/Products/Release/GUmBoDE.app/Contents/Resources/redist
+s396983151.381968
+e396983158.398464
+r1
+xCpResource
+xGUmBoDE/../../../redist
+xBuild/Products/Release/GUmBoDE.app/Contents/Resources/redist
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection65"Copy Build/Products/Release/GUmBoDE.app/Contents/Resources/redist38da616f7ba9b741^d10466767ba9b741^---0#0#0#-19%DVTDocumentLocation2@119"file://localhost/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources/redist000000000080d041^548"CpResource GUmBoDE/../../../redist Build/Products/Release/GUmBoDE.app/Contents/Resources/redist    cd /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/GUmBoDE/../../../redist /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources36"CF229769-FA52-4AAB-B36B-7867E67CD755-
+
+CCpResource GUmBoDE/../../../resources/services Build/Products/Release/GUmBoDE.app/Contents/Resources/services
+s396983151.450517
+e396983151.712828
+r1
+xCpResource
+xGUmBoDE/../../../resources/services
+xBuild/Products/Release/GUmBoDE.app/Contents/Resources/services
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection67"Copy Build/Products/Release/GUmBoDE.app/Contents/Resources/services0265736f7ba9b741^eb6eb66f7ba9b741^---0#0#0#-19%DVTDocumentLocation2@121"file://localhost/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources/services000000000080d041^574"CpResource GUmBoDE/../../../resources/services Build/Products/Release/GUmBoDE.app/Contents/Resources/services    cd /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/GUmBoDE/../../../resources/services /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources36"14985ADD-7872-4C4D-99D1-A96CC45A4341-
+
+CCpResource GUmBoDE/../../../startprivoxy Build/Products/Release/GUmBoDE.app/Contents/Resources/startprivoxy
+s396983151.497615
+e396983151.555074
+r1
+xCpResource
+xGUmBoDE/../../../startprivoxy
+xBuild/Products/Release/GUmBoDE.app/Contents/Resources/startprivoxy
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Copy Build/Products/Release/GUmBoDE.app/Contents/Resources/startprivoxy9d7f836f7ba9b741^24808f6f7ba9b741^---0#0#0#-19%DVTDocumentLocation2@125"file://localhost/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources/startprivoxy000000000080d041^566"CpResource GUmBoDE/../../../startprivoxy Build/Products/Release/GUmBoDE.app/Contents/Resources/startprivoxy    cd /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/GUmBoDE/../../../startprivoxy /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources36"092D5776-0C21-45F7-93EB-3F9E54ED9281-
+
+CCpResource GUmBoDE/../../../update-aardwolf-config Build/Products/Release/GUmBoDE.app/Contents/Resources/update-aardwolf-config
+s396983151.450544
+e396983151.552402
+r1
+xCpResource
+xGUmBoDE/../../../update-aardwolf-config
+xBuild/Products/Release/GUmBoDE.app/Contents/Resources/update-aardwolf-config
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection81"Copy Build/Products/Release/GUmBoDE.app/Contents/Resources/update-aardwolf-configb267736f7ba9b741^357c8f6f7ba9b741^---0#0#0#-19%DVTDocumentLocation2@135"file://localhost/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources/update-aardwolf-config000000000080d041^596"CpResource GUmBoDE/../../../update-aardwolf-config Build/Products/Release/GUmBoDE.app/Contents/Resources/update-aardwolf-config    cd /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/GUmBoDE/../../../update-aardwolf-config /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources36"674CB0DC-FB13-4FAD-8981-D04A7D5705D2-
+
+CCpResource GUmBoDE/../../../update-privoxy-config Build/Products/Release/GUmBoDE.app/Contents/Resources/update-privoxy-config
+s396983151.449402
+e396983151.552042
+r1
+xCpResource
+xGUmBoDE/../../../update-privoxy-config
+xBuild/Products/Release/GUmBoDE.app/Contents/Resources/update-privoxy-config
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection80"Copy Build/Products/Release/GUmBoDE.app/Contents/Resources/update-privoxy-config6d1e736f7ba9b741^0b7a8f6f7ba9b741^---0#0#0#-19%DVTDocumentLocation2@134"file://localhost/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources/update-privoxy-config000000000080d041^593"CpResource GUmBoDE/../../../update-privoxy-config Build/Products/Release/GUmBoDE.app/Contents/Resources/update-privoxy-config    cd /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/GUmBoDE/../../../update-privoxy-config /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources36"94A781CD-8AC2-4651-83D1-BC65BEAE140A-
+
+CCpResource GUmBoDE/app-icons/android-icon.png Build/Products/Release/GUmBoDE.app/Contents/Resources/android-icon.png
+s396983151.206366
+e396983151.231139
+r1
+xCpResource
+xGUmBoDE/app-icons/android-icon.png
+xBuild/Products/Release/GUmBoDE.app/Contents/Resources/android-icon.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection75"Copy Build/Products/Release/GUmBoDE.app/Contents/Resources/android-icon.png58e3346f7ba9b741^492e3b6f7ba9b741^---0#0#0#-19%DVTDocumentLocation2@129"file://localhost/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources/android-icon.png000000000080d041^580"CpResource GUmBoDE/app-icons/android-icon.png Build/Products/Release/GUmBoDE.app/Contents/Resources/android-icon.png    cd /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/GUmBoDE/app-icons/android-icon.png /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources36"2D740FC6-A723-47E7-8EC5-95C6235BDF94-
+
+CCpResource GUmBoDE/app-icons/bug-icon.png Build/Products/Release/GUmBoDE.app/Contents/Resources/bug-icon.png
+s396983151.232420
+e396983151.313407
+r1
+xCpResource
+xGUmBoDE/app-icons/bug-icon.png
+xBuild/Products/Release/GUmBoDE.app/Contents/Resources/bug-icon.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Copy Build/Products/Release/GUmBoDE.app/Contents/Resources/bug-icon.png978c3b6f7ba9b741^529b506f7ba9b741^---0#0#0#-19%DVTDocumentLocation2@125"file://localhost/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources/bug-icon.png000000000080d041^568"CpResource GUmBoDE/app-icons/bug-icon.png Build/Products/Release/GUmBoDE.app/Contents/Resources/bug-icon.png    cd /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/GUmBoDE/app-icons/bug-icon.png /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources36"6E4F24DC-A548-461D-B914-A6CC4D6B1E5D-
+
+CCpResource GUmBoDE/app-icons/chrome-icon.png Build/Products/Release/GUmBoDE.app/Contents/Resources/chrome-icon.png
+s396983151.314811
+e396983151.449419
+r1
+xCpResource
+xGUmBoDE/app-icons/chrome-icon.png
+xBuild/Products/Release/GUmBoDE.app/Contents/Resources/chrome-icon.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection74"Copy Build/Products/Release/GUmBoDE.app/Contents/Resources/chrome-icon.pnge3a8506f7ba9b741^37708f6f7ba9b741^---0#0#0#-19%DVTDocumentLocation2@128"file://localhost/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources/chrome-icon.png000000000080d041^577"CpResource GUmBoDE/app-icons/chrome-icon.png Build/Products/Release/GUmBoDE.app/Contents/Resources/chrome-icon.png    cd /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/GUmBoDE/app-icons/chrome-icon.png /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources36"97F39DD8-C40C-4518-9753-4555979D42DE-
+
+CCpResource GUmBoDE/app-icons/firefox-icon.png Build/Products/Release/GUmBoDE.app/Contents/Resources/firefox-icon.png
+s396983151.315119
+e396983151.447664
+r1
+xCpResource
+xGUmBoDE/app-icons/firefox-icon.png
+xBuild/Products/Release/GUmBoDE.app/Contents/Resources/firefox-icon.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection75"Copy Build/Products/Release/GUmBoDE.app/Contents/Resources/firefox-icon.png57b5506f7ba9b741^44698f6f7ba9b741^---0#0#0#-19%DVTDocumentLocation2@129"file://localhost/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources/firefox-icon.png000000000080d041^580"CpResource GUmBoDE/app-icons/firefox-icon.png Build/Products/Release/GUmBoDE.app/Contents/Resources/firefox-icon.png    cd /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/GUmBoDE/app-icons/firefox-icon.png /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources36"9B2F295E-0B4A-4F7E-AF70-FE8C905C00E9-
+
+CCpResource GUmBoDE/app-icons/opera-icon.png Build/Products/Release/GUmBoDE.app/Contents/Resources/opera-icon.png
+s396983151.316425
+e396983151.449299
+r1
+xCpResource
+xGUmBoDE/app-icons/opera-icon.png
+xBuild/Products/Release/GUmBoDE.app/Contents/Resources/opera-icon.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection73"Copy Build/Products/Release/GUmBoDE.app/Contents/Resources/opera-icon.pngb70b516f7ba9b741^1a6b8f6f7ba9b741^---0#0#0#-19%DVTDocumentLocation2@127"file://localhost/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources/opera-icon.png000000000080d041^574"CpResource GUmBoDE/app-icons/opera-icon.png Build/Products/Release/GUmBoDE.app/Contents/Resources/opera-icon.png    cd /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/GUmBoDE/app-icons/opera-icon.png /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources36"6FA0B312-24F0-41E2-9E42-5393A5C6CB3F-
+
+CCpResource GUmBoDE/en.lproj/Credits.rtf Build/Products/Release/GUmBoDE.app/Contents/Resources/en.lproj/Credits.rtf
+s396983151.195087
+e396983151.362573
+r1
+xCpResource
+xGUmBoDE/en.lproj/Credits.rtf
+xBuild/Products/Release/GUmBoDE.app/Contents/Resources/en.lproj/Credits.rtf
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection79"Copy Build/Products/Release/GUmBoDE.app/Contents/Resources/en.lproj/Credits.rtff8fb316f7ba9b741^9b598f6f7ba9b741^---0#0#0#-19%DVTDocumentLocation2@133"file://localhost/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources/en.lproj/Credits.rtf000000000080d041^581"CpResource GUmBoDE/en.lproj/Credits.rtf Build/Products/Release/GUmBoDE.app/Contents/Resources/en.lproj/Credits.rtf    cd /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/GUmBoDE/en.lproj/Credits.rtf /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources/en.lproj36"F1FF8D61-DDE2-444F-B432-9173F1867562-
+
+CCpResource GUmBoDE/getavdinfo Build/Products/Release/GUmBoDE.app/Contents/Resources/getavdinfo
+s396983151.195685
+e396983151.380481
+r1
+xCpResource
+xGUmBoDE/getavdinfo
+xBuild/Products/Release/GUmBoDE.app/Contents/Resources/getavdinfo
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection69"Copy Build/Products/Release/GUmBoDE.app/Contents/Resources/getavdinfo8928326f7ba9b741^f25c8f6f7ba9b741^---0#0#0#-19%DVTDocumentLocation2@123"file://localhost/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources/getavdinfo000000000080d041^542"CpResource GUmBoDE/getavdinfo Build/Products/Release/GUmBoDE.app/Contents/Resources/getavdinfo    cd /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/GUmBoDE/getavdinfo /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources36"E5BE9E79-0D1A-4AA3-983B-41A53230D025-
+
+CCpResource GUmBoDE/getdevices Build/Products/Release/GUmBoDE.app/Contents/Resources/getdevices
+s396983151.195708
+e396983151.313453
+r1
+xCpResource
+xGUmBoDE/getdevices
+xBuild/Products/Release/GUmBoDE.app/Contents/Resources/getdevices
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection69"Copy Build/Products/Release/GUmBoDE.app/Contents/Resources/getdevicesea25326f7ba9b741^af99506f7ba9b741^---0#0#0#-19%DVTDocumentLocation2@123"file://localhost/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources/getdevices000000000080d041^542"CpResource GUmBoDE/getdevices Build/Products/Release/GUmBoDE.app/Contents/Resources/getdevices    cd /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/GUmBoDE/getdevices /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources36"00F95943-532B-489A-8F97-E34112FB227C-
+
+CCpResource GUmBoDE/startavd Build/Products/Release/GUmBoDE.app/Contents/Resources/startavd
+s396983151.195689
+e396983151.313325
+r1
+xCpResource
+xGUmBoDE/startavd
+xBuild/Products/Release/GUmBoDE.app/Contents/Resources/startavd
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection67"Copy Build/Products/Release/GUmBoDE.app/Contents/Resources/startavdc729326f7ba9b741^f295506f7ba9b741^---0#0#0#-19%DVTDocumentLocation2@121"file://localhost/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources/startavd000000000080d041^536"CpResource GUmBoDE/startavd Build/Products/Release/GUmBoDE.app/Contents/Resources/startavd    cd /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/GUmBoDE/startavd /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources36"812A7C0E-161B-494E-BD4B-3C90AEFE60D5-
+
+CCpResource GUmBoDE/transparent.png Build/Products/Release/GUmBoDE.app/Contents/Resources/transparent.png
+s396983151.380342
+e396983151.448201
+r1
+xCpResource
+xGUmBoDE/transparent.png
+xBuild/Products/Release/GUmBoDE.app/Contents/Resources/transparent.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection74"Copy Build/Products/Release/GUmBoDE.app/Contents/Resources/transparent.png03cf616f7ba9b741^9c6c8f6f7ba9b741^---0#0#0#-19%DVTDocumentLocation2@128"file://localhost/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources/transparent.png000000000080d041^557"CpResource GUmBoDE/transparent.png Build/Products/Release/GUmBoDE.app/Contents/Resources/transparent.png    cd /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/GUmBoDE/transparent.png /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources36"04409312-9AAA-4EF1-BC37-271B4729252B-
+
+CCpResource Icon.icns Build/Products/Release/GUmBoDE.app/Contents/Resources/Icon.icns
+s396983151.195445
+e396983151.380946
+r1
+xCpResource
+xIcon.icns
+xBuild/Products/Release/GUmBoDE.app/Contents/Resources/Icon.icns
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection68"Copy Build/Products/Release/GUmBoDE.app/Contents/Resources/Icon.icnsc213326f7ba9b741^63628f6f7ba9b741^---0#0#0#-19%DVTDocumentLocation2@122"file://localhost/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources/Icon.icns000000000080d041^523"CpResource Icon.icns Build/Products/Release/GUmBoDE.app/Contents/Resources/Icon.icns    cd /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Icon.icns /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources36"45CD651A-4596-4725-A6A2-616C12310762-
+
+CGenerateDSYMFile /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app.dSYM /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/MacOS/GUmBoDE
+s396983151.054702
+e396983151.185492
+r1
+xGenerateDSYMFile
+x/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app.dSYM
+x/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/MacOS/GUmBoDE
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection91"Generate /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app.dSYM12110e6f7ba9b741^af7b2f6f7ba9b741^---0#0#0#-19%DVTDocumentLocation2@98"file://localhost/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app.dSYM000000000080d041^452"GenerateDSYMFile Build/Products/Release/GUmBoDE.app.dSYM Build/Products/Release/GUmBoDE.app/Contents/MacOS/GUmBoDE    cd /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/MacOS/GUmBoDE -o /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app.dSYM36"9664D0A2-47D3-4729-91B1-56BBF4123739-
+
+CLd /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/MacOS/GUmBoDE normal x86_64
+s396983150.482567
+e396983151.047756
+r1
+xLd
+x/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/MacOS/GUmBoDE
+xnormal
+xx86_64
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection105"Link /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/MacOS/GUmBoDE399a7b6e7ba9b741^213a0c6f7ba9b741^---0#0#0#--838"Ld Build/Products/Release/GUmBoDE.app/Contents/MacOS/GUmBoDE normal x86_64    cd /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE    setenv MACOSX_DEPLOYMENT_TARGET 10.7    /Applications/Xcode.app/Contents/Developer/usr/bin/llvm-gcc-4.2 -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -L/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release -F/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release -filelist /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Intermediates/GUmBoDE.build/Release/GUmBoDE.build/Objects-normal/x86_64/GUmBoDE.LinkFileList -mmacosx-version-min=10.7 -fobjc-link-runtime -framework Cocoa -framework AppleScriptObjC -o /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/MacOS/GUmBoDE36"54ACACD0-21E0-42B6-B7A2-71229C75FF89-
+
+COSACompile GUmBoDE/org_gumbodeAppDelegate.applescript
+s396983146.739101
+e396983146.926850
+r1
+xOSACompile
+xGUmBoDE/org_gumbodeAppDelegate.applescript
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection50"Compile GUmBoDE/org_gumbodeAppDelegate.applescript0f45bd6a7ba9b741^5724f26a7ba9b741^---0#0#0#--320"OSACompile GUmBoDE/org_gumbodeAppDelegate.applescript    cd /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE    /usr/bin/osacompile -l AppleScript -d -o /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Resources/org_gumbodeAppDelegate.scpt -x GUmBoDE/org_gumbodeAppDelegate.applescript36"060D4981-03F9-4863-931C-FF0D41840D11-
+
+CProcessInfoPlistFile /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Info.plist GUmBoDE/GUmBoDE-Info.plist
+s396983146.681034
+e396983146.723918
+r1
+xProcessInfoPlistFile
+x/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Info.plist
+xGUmBoDE/GUmBoDE-Info.plist
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection34"Process GUmBoDE/GUmBoDE-Info.plist5a65ae6a7ba9b741^069cbd6a7ba9b741^---0#0#0#-19%DVTDocumentLocation2@85"file://localhost/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/GUmBoDE/GUmBoDE-Info.plist0000000000000000^455"ProcessInfoPlistFile Build/Products/Release/GUmBoDE.app/Contents/Info.plist GUmBoDE/GUmBoDE-Info.plist    cd /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE    builtin-infoPlistUtility GUmBoDE/GUmBoDE-Info.plist -genpkginfo /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/PkgInfo -expandbuildsettings -platform macosx -o /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app/Contents/Info.plist36"A9CA71C1-5BD2-425F-A76F-D3C66B3035D8-
+
+CProcessPCH /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Intermediates/PrecompiledHeaders/GUmBoDE-Prefix-cknhuzpijqgkeofdxdxqhivxelkv/GUmBoDE-Prefix.pch.gch GUmBoDE/GUmBoDE-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvmgcc42
+s396983146.739129
+e396983150.348147
+r1
+xProcessPCH
+x/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Intermediates/PrecompiledHeaders/GUmBoDE-Prefix-cknhuzpijqgkeofdxdxqhivxelkv/GUmBoDE-Prefix.pch.gch
+xGUmBoDE/GUmBoDE-Prefix.pch
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvmgcc42
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection37"Precompile GUmBoDE/GUmBoDE-Prefix.pchaa48bd6a7ba9b741^f71f596e7ba9b741^---0#0#0#-19%DVTDocumentLocation2@85"file://localhost/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/GUmBoDE/GUmBoDE-Prefix.pch0000000000000000^2126"ProcessPCH Build/Intermediates/PrecompiledHeaders/GUmBoDE-Prefix-cknhuzpijqgkeofdxdxqhivxelkv/GUmBoDE-Prefix.pch.gch GUmBoDE/GUmBoDE-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvmgcc42    cd /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/usr/bin/llvm-gcc-4.2 -x objective-c-header -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -Wuninitialized -Wshorten-64-to-32 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -mmacosx-version-min=10.7 -gdwarf-2 -fvisibility=hidden -iquote /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Intermediates/GUmBoDE.build/Release/GUmBoDE.build/GUmBoDE-generated-files.hmap -I/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Intermediates/GUmBoDE.build/Release/GUmBoDE.build/GUmBoDE-own-target-headers.hmap -I/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Intermediates/GUmBoDE.build/Release/GUmBoDE.build/GUmBoDE-all-target-headers.hmap -iquote /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Intermediates/GUmBoDE.build/Release/GUmBoDE.build/GUmBoDE-project-headers.hmap -I/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Intermediates/GUmBoDE.build/Release/GUmBoDE.build/DerivedSources/x86_64 -I/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Intermediates/GUmBoDE.build/Release/GUmBoDE.build/DerivedSources -F/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release -c /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/GUmBoDE/GUmBoDE-Prefix.pch -o /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Intermediates/PrecompiledHeaders/GUmBoDE-Prefix-cknhuzpijqgkeofdxdxqhivxelkv/GUmBoDE-Prefix.pch.gch36"79BAAB51-08C1-49C3-8D90-B29EE5035291-
+
+CProcessPCH /Users/j5/Library/Developer/Xcode/DerivedData/GUmBoDE-ejzdiigqkbfgaabfenwgxfjwiqcf/Index/PrecompiledHeaders/GUmBoDE-Prefix-awyncuwdeedafzdczjxgrlzfrqnc_ast/GUmBoDE-Prefix.pch.pth GUmBoDE/GUmBoDE-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CTouch /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app
+s396983158.406516
+e396983158.564734
+r1
+xTouch
+x/Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection83"Touch /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app151e68767ba9b741^799290767ba9b741^---0#0#0#--191"Touch Build/Products/Release/GUmBoDE.app    cd /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE    /usr/bin/touch -c /Users/j5/Dropbox/Code/gumbode/app/GUmBoDE/Build/Products/Release/GUmBoDE.app36"CC2BB6DD-2210-4B81-B84A-DE752F8E6690-
+

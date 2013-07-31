@@ -1,0 +1,4 @@
+# Aardwolf filter
+FILTER: aardwolf Inject the aardwolf script into the current page, modify script tags for local to go through aardwolf
+s|(<head[^>]*>)|$1\n<script src="http://10.2.1.139:8500/aardwolf.js"></script>|
+s|"/(.*/cachefly/.*.js)"|"//10.2.1.139:8500/$1.js"|g
